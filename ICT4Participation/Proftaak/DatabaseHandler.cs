@@ -8,5 +8,6 @@ namespace Proftaak
 {
     class DatabaseHandler
     {
+
     }
 }
