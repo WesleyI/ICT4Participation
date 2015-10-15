@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Vrijwilliger
+    partial class VrijwilligerForm
     {
         /// <summary>
         /// Required designer variable.

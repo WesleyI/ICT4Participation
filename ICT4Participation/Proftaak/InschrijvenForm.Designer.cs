@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Inschrijven
+    partial class InschrijvenForm
     {
         /// <summary>
         /// Required designer variable.

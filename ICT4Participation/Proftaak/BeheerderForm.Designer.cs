@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Beheerder
+    partial class BeheerderForm
     {
         /// <summary>
         /// Required designer variable.

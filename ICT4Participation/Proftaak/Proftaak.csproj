@@ -44,58 +44,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beheerder.cs">
+    <Compile Include="Account.cs" />
+    <Compile Include="Answer.cs" />
+    <Compile Include="BeheerderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Beheerder.Designer.cs">
-      <DependentUpon>Beheerder.cs</DependentUpon>
+    <Compile Include="BeheerderForm.Designer.cs">
+      <DependentUpon>BeheerderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hulpvraag.cs">
+    <Compile Include="ChatMessage.cs" />
+    <Compile Include="HelpRequest.cs" />
+    <Compile Include="HulpvraagForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Hulpvraag.Designer.cs">
-      <DependentUpon>Hulpvraag.cs</DependentUpon>
+    <Compile Include="HulpvraagForm.Designer.cs">
+      <DependentUpon>HulpvraagForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inloggen.cs">
+    <Compile Include="InloggenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inloggen.Designer.cs">
-      <DependentUpon>Inloggen.cs</DependentUpon>
+    <Compile Include="InloggenForm.Designer.cs">
+      <DependentUpon>InloggenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Helpbehoevende.cs">
+    <Compile Include="HelpbehoevendeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Helpbehoevende.Designer.cs">
-      <DependentUpon>Helpbehoevende.cs</DependentUpon>
+    <Compile Include="HelpbehoevendeForm.Designer.cs">
+      <DependentUpon>HelpbehoevendeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inschrijven.cs">
+    <Compile Include="InschrijvenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inschrijven.Designer.cs">
-      <DependentUpon>Inschrijven.cs</DependentUpon>
+    <Compile Include="InschrijvenForm.Designer.cs">
+      <DependentUpon>InschrijvenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vrijwilliger.cs">
+    <Compile Include="Review.cs" />
+    <Compile Include="VrijwilligerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vrijwilliger.Designer.cs">
-      <DependentUpon>Vrijwilliger.cs</DependentUpon>
+    <Compile Include="VrijwilligerForm.Designer.cs">
+      <DependentUpon>VrijwilligerForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Beheerder.resx">
-      <DependentUpon>Beheerder.cs</DependentUpon>
+    <EmbeddedResource Include="BeheerderForm.resx">
+      <DependentUpon>BeheerderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hulpvraag.resx">
-      <DependentUpon>Hulpvraag.cs</DependentUpon>
+    <EmbeddedResource Include="HulpvraagForm.resx">
+      <DependentUpon>HulpvraagForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inloggen.resx">
-      <DependentUpon>Inloggen.cs</DependentUpon>
+    <EmbeddedResource Include="InloggenForm.resx">
+      <DependentUpon>InloggenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Helpbehoevende.resx">
-      <DependentUpon>Helpbehoevende.cs</DependentUpon>
+    <EmbeddedResource Include="HelpbehoevendeForm.resx">
+      <DependentUpon>HelpbehoevendeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inschrijven.resx">
-      <DependentUpon>Inschrijven.cs</DependentUpon>
+    <EmbeddedResource Include="InschrijvenForm.resx">
+      <DependentUpon>InschrijvenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,8 +111,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vrijwilliger.resx">
-      <DependentUpon>Vrijwilliger.cs</DependentUpon>
+    <EmbeddedResource Include="VrijwilligerForm.resx">
+      <DependentUpon>VrijwilligerForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

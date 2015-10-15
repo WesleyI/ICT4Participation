@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proftaak
 {
-    public partial class Inschrijven : Form
+    public partial class InschrijvenForm : Form
     {
-        public Inschrijven()
+        public InschrijvenForm()
         {
             InitializeComponent();
         }

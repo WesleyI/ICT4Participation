@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace Proftaak
 {
-    public partial class Inloggen : Form
+    public partial class InloggenForm : Form
     {
-        public Inloggen()
+        public InloggenForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Beheerder beheerder = new Beheerder();
-            Inschrijven inschrijven = new Inschrijven();
-            Vrijwilliger vrijwilliger = new Vrijwilliger();
+            BeheerderForm beheerder = new BeheerderForm();
+            InschrijvenForm inschrijven = new InschrijvenForm();
+            VrijwilligerForm vrijwilliger = new VrijwilligerForm();
             Hulpbehoevende hulpbehoevende = new Hulpbehoevende();
-            Hulpvraag hulpvraag = new Hulpvraag();
+            HulpvraagForm hulpvraag = new HulpvraagForm();
 
             beheerder.Show();
             inschrijven.Show();

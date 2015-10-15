@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Hulpvraag
+    partial class HulpvraagForm
     {
         /// <summary>
         /// Required designer variable.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proftaak
 {
-    class Beheerder
+    class AccountHandler
     {
     }
 }

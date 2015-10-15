@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Proftaak
 {
-    public partial class Hulpvraag : Form
+    public partial class Hulpbehoevende : Form
     {
-        public Hulpvraag()
+        public Hulpbehoevende()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

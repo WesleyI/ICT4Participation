@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Inloggen
+    partial class InloggenForm
     {
         /// <summary>
         /// Required designer variable.
