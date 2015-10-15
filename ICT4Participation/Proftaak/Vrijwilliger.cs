@@ -31,5 +31,21 @@ namespace Proftaak
         public string PhoneNumber { get { return phoneNumber;} }
         public string Competences { get { return competences;} }
         public string Availability { get { return availabilty; } }
+
+        public Vrijwilliger(string firstName, string lastName, string city, string street, string address, string bio, 
+            string dateOfBirth, bool car, string phoneNumber, string competences, string availabilty)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.city = city;
+            this.street = street;
+            this.address = address;
+            this.bio = bio;
+            this.dateOfBirth = dateOfBirth;
+            this.car = car;
+            this.phoneNumber = phoneNumber;
+            this.competences = competences;
+            this.availabilty = availabilty;
+        }
     }
 }

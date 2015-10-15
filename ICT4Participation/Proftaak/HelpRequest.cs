@@ -21,5 +21,16 @@ namespace Proftaak
         public string Duration { get { return duration; } }
         public string Urgent { get { return urgent; } }
         public bool Accepted { get { return accepted; } }
+
+        public HelpRequest(string problem, string dateOfCreation, string beginDate, 
+            string duration, string urgent, bool accepted)
+        {
+            this.problem = problem;
+            this.dateOfCreation = dateOfCreation;
+            this.beginDate = beginDate;
+            this.duration = duration;
+            this.urgent = urgent;
+            this.accepted = accepted;
+        }
     }
 }

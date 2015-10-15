@@ -12,6 +12,7 @@ namespace Proftaak
         private List<Review> reviews = new List<Review>();
         private List<ChatMessage> chatMessages = new List<ChatMessage>();
         private List<Answer> answers = new List<Answer>();
+        private List<string> meetings = new List<string>(); 
 
         public HelpHandler()
         {

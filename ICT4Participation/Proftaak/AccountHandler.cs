@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Proftaak
 {
-    class AccountHandler : Account
+    class AccountHandler
     {
+        private List<Vrijwilliger> vrijwilligers = new List<Vrijwilliger>(); 
+        private List<HelpBehoevende> helpBehoevenden = new List<HelpBehoevende>();
+
+        public List<Vrijwilliger> Vrijwilligers { get { return vrijwilligers; } }
+        public List<HelpBehoevende> HelpBehoevenden { get { return helpBehoevenden; } } 
+
         public AccountHandler()
         {
             

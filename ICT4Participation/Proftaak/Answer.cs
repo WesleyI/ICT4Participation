@@ -14,5 +14,11 @@ namespace Proftaak
         public string Text { get { return text; } }
         public string Date { get { return date; } }
 
+        public Answer(string text, string date)
+        {
+            this.text = text;
+            this.date = date;
+        }
+
     }
 }

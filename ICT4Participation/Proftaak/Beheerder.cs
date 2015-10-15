@@ -8,6 +8,9 @@ namespace Proftaak
 {
     class Beheerder
     {
-
+        public Beheerder()
+        {
+            
+        }
     }
 }

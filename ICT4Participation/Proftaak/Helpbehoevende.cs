@@ -27,5 +27,19 @@ namespace Proftaak
         public string DateOfBirth { get { return dateOfBirth;} }
         public string PhoneNumber { get { return phoneNumber;} }
         public string Problem { get { return problem;} }
+
+        public HelpBehoevende(string firstName, string lastName, string city, string street, 
+            string address, string bio, string dateOfBirth, string phoneNumber, string problem)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.city = city;
+            this.street = street;
+            this.address = address;
+            this.bio = bio;
+            this.dateOfBirth = dateOfBirth;
+            this.phoneNumber = phoneNumber;
+            this.problem = problem;
+        }
     }
 }

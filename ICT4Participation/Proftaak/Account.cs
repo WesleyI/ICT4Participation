@@ -16,6 +16,7 @@ namespace Proftaak
             this.email = email;
             this.password = password;
         }
+
         public string Email { get { return email; } }
 
         public string Password { get { return password;} }

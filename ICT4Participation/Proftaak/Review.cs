@@ -15,5 +15,12 @@ namespace Proftaak
         public string Text { get { return text; } }
         public string Date { get { return date; } }
         public int Score { get { return score; } }
+
+        public Review(string text, string date, int score)
+        {
+            this.text = text;
+            this.date = date;
+            this.score = score;
+        }
     }
 }
