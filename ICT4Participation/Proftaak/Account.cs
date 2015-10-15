@@ -11,6 +11,11 @@ namespace Proftaak
         private string email;
         private string password;
 
+        public Account(string email, string password)
+        {
+            this.email = email;
+            this.password = password;
+        }
         public string Email { get { return email; } }
 
         public string Password { get { return password;} }

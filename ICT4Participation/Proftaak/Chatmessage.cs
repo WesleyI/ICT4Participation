@@ -8,5 +8,10 @@ namespace Proftaak
 {
     class ChatMessage
     {
+        private string text;
+        private string date;
+
+        public string Text { get { return text; } }
+        public string Date { get { return date; } }
     }
 }
