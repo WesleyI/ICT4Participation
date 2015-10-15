@@ -78,12 +78,13 @@
             this.btnVrijFindVOG = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.gbHulpbehoevende = new System.Windows.Forms.GroupBox();
+            this.dtpHulpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.gbVrijwilliger = new System.Windows.Forms.GroupBox();
+            this.dtpVrijBirthDate = new System.Windows.Forms.DateTimePicker();
             this.btnVrijFindPhoto = new System.Windows.Forms.Button();
             this.tbVrijPhoto = new System.Windows.Forms.TextBox();
-            this.dtpVrijBirthDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpHulpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCreateAccount = new System.Windows.Forms.Button();
             this.gbHulpbehoevende.SuspendLayout();
             this.gbVrijwilliger.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +97,7 @@
             "Vrijwilliger",
             "Hulpbehoevende"});
             this.comboBox1.Location = new System.Drawing.Point(84, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(115, 23);
             this.comboBox1.TabIndex = 0;
@@ -215,7 +216,7 @@
             // 
             this.tbVrijFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijFirstname.Location = new System.Drawing.Point(114, 14);
-            this.tbVrijFirstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijFirstname.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijFirstname.Name = "tbVrijFirstname";
             this.tbVrijFirstname.Size = new System.Drawing.Size(204, 21);
             this.tbVrijFirstname.TabIndex = 15;
@@ -224,7 +225,7 @@
             // 
             this.tbVrijCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijCity.Location = new System.Drawing.Point(114, 82);
-            this.tbVrijCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijCity.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijCity.Name = "tbVrijCity";
             this.tbVrijCity.Size = new System.Drawing.Size(204, 21);
             this.tbVrijCity.TabIndex = 17;
@@ -233,7 +234,7 @@
             // 
             this.tbVrijStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijStreet.Location = new System.Drawing.Point(114, 105);
-            this.tbVrijStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijStreet.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijStreet.Name = "tbVrijStreet";
             this.tbVrijStreet.Size = new System.Drawing.Size(204, 21);
             this.tbVrijStreet.TabIndex = 18;
@@ -242,7 +243,7 @@
             // 
             this.tbVrijAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijAddress.Location = new System.Drawing.Point(114, 128);
-            this.tbVrijAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijAddress.Name = "tbVrijAddress";
             this.tbVrijAddress.Size = new System.Drawing.Size(204, 21);
             this.tbVrijAddress.TabIndex = 19;
@@ -251,7 +252,7 @@
             // 
             this.tbVrijPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijPhonenumber.Location = new System.Drawing.Point(114, 151);
-            this.tbVrijPhonenumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijPhonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijPhonenumber.Name = "tbVrijPhonenumber";
             this.tbVrijPhonenumber.Size = new System.Drawing.Size(204, 21);
             this.tbVrijPhonenumber.TabIndex = 20;
@@ -260,7 +261,7 @@
             // 
             this.tbVrijCompetences.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijCompetences.Location = new System.Drawing.Point(114, 196);
-            this.tbVrijCompetences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijCompetences.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijCompetences.Multiline = true;
             this.tbVrijCompetences.Name = "tbVrijCompetences";
             this.tbVrijCompetences.Size = new System.Drawing.Size(204, 41);
@@ -270,7 +271,7 @@
             // 
             this.tbVrijTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijTransport.Location = new System.Drawing.Point(114, 242);
-            this.tbVrijTransport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijTransport.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijTransport.Name = "tbVrijTransport";
             this.tbVrijTransport.Size = new System.Drawing.Size(204, 21);
             this.tbVrijTransport.TabIndex = 22;
@@ -279,7 +280,7 @@
             // 
             this.tbVrijAvailability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijAvailability.Location = new System.Drawing.Point(114, 264);
-            this.tbVrijAvailability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijAvailability.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijAvailability.Multiline = true;
             this.tbVrijAvailability.Name = "tbVrijAvailability";
             this.tbVrijAvailability.Size = new System.Drawing.Size(204, 45);
@@ -289,7 +290,7 @@
             // 
             this.tbVrijBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijBio.Location = new System.Drawing.Point(114, 313);
-            this.tbVrijBio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijBio.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijBio.Multiline = true;
             this.tbVrijBio.Name = "tbVrijBio";
             this.tbVrijBio.Size = new System.Drawing.Size(204, 104);
@@ -299,7 +300,7 @@
             // 
             this.tbHulpPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpPhonenumber.Location = new System.Drawing.Point(127, 151);
-            this.tbHulpPhonenumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpPhonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpPhonenumber.Name = "tbHulpPhonenumber";
             this.tbHulpPhonenumber.Size = new System.Drawing.Size(204, 21);
             this.tbHulpPhonenumber.TabIndex = 38;
@@ -308,7 +309,7 @@
             // 
             this.tbHulpAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpAddress.Location = new System.Drawing.Point(127, 128);
-            this.tbHulpAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpAddress.Name = "tbHulpAddress";
             this.tbHulpAddress.Size = new System.Drawing.Size(204, 21);
             this.tbHulpAddress.TabIndex = 37;
@@ -317,7 +318,7 @@
             // 
             this.tbHulpStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpStreet.Location = new System.Drawing.Point(127, 105);
-            this.tbHulpStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpStreet.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpStreet.Name = "tbHulpStreet";
             this.tbHulpStreet.Size = new System.Drawing.Size(204, 21);
             this.tbHulpStreet.TabIndex = 36;
@@ -326,7 +327,7 @@
             // 
             this.tbHulpCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpCity.Location = new System.Drawing.Point(127, 83);
-            this.tbHulpCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpCity.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpCity.Name = "tbHulpCity";
             this.tbHulpCity.Size = new System.Drawing.Size(204, 21);
             this.tbHulpCity.TabIndex = 35;
@@ -401,7 +402,7 @@
             // 
             this.tbHulpProblem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpProblem.Location = new System.Drawing.Point(127, 268);
-            this.tbHulpProblem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpProblem.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpProblem.Multiline = true;
             this.tbHulpProblem.Name = "tbHulpProblem";
             this.tbHulpProblem.Size = new System.Drawing.Size(204, 65);
@@ -422,7 +423,7 @@
             // 
             this.tbVrijEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijEmail.Location = new System.Drawing.Point(114, 173);
-            this.tbVrijEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijEmail.Name = "tbVrijEmail";
             this.tbVrijEmail.Size = new System.Drawing.Size(204, 21);
             this.tbVrijEmail.TabIndex = 42;
@@ -431,7 +432,7 @@
             // 
             this.tbHulpEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpEmail.Location = new System.Drawing.Point(127, 174);
-            this.tbHulpEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpEmail.Name = "tbHulpEmail";
             this.tbHulpEmail.Size = new System.Drawing.Size(204, 21);
             this.tbHulpEmail.TabIndex = 44;
@@ -462,7 +463,7 @@
             // 
             this.tbVrijLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijLastname.Location = new System.Drawing.Point(114, 36);
-            this.tbVrijLastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijLastname.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijLastname.Name = "tbVrijLastname";
             this.tbVrijLastname.Size = new System.Drawing.Size(204, 21);
             this.tbVrijLastname.TabIndex = 46;
@@ -471,7 +472,7 @@
             // 
             this.tbHulpLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpLastname.Location = new System.Drawing.Point(127, 36);
-            this.tbHulpLastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpLastname.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpLastname.Name = "tbHulpLastname";
             this.tbHulpLastname.Size = new System.Drawing.Size(204, 21);
             this.tbHulpLastname.TabIndex = 50;
@@ -491,7 +492,7 @@
             // 
             this.tbHulpFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpFirstname.Location = new System.Drawing.Point(127, 14);
-            this.tbHulpFirstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpFirstname.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpFirstname.Name = "tbHulpFirstname";
             this.tbHulpFirstname.Size = new System.Drawing.Size(204, 21);
             this.tbHulpFirstname.TabIndex = 48;
@@ -511,7 +512,7 @@
             // 
             this.tbHulpBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbHulpBio.Location = new System.Drawing.Point(127, 198);
-            this.tbHulpBio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbHulpBio.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpBio.Multiline = true;
             this.tbHulpBio.Name = "tbHulpBio";
             this.tbHulpBio.Size = new System.Drawing.Size(204, 66);
@@ -531,7 +532,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(209, 653);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 30);
             this.button2.TabIndex = 54;
@@ -542,7 +543,7 @@
             // 
             this.tbVrijVog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrijVog.Location = new System.Drawing.Point(113, 424);
-            this.tbVrijVog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVrijVog.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijVog.Name = "tbVrijVog";
             this.tbVrijVog.Size = new System.Drawing.Size(126, 21);
             this.tbVrijVog.TabIndex = 56;
@@ -573,7 +574,7 @@
             // 
             this.btnVrijFindVOG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVrijFindVOG.Location = new System.Drawing.Point(243, 422);
-            this.btnVrijFindVOG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVrijFindVOG.Margin = new System.Windows.Forms.Padding(2);
             this.btnVrijFindVOG.Name = "btnVrijFindVOG";
             this.btnVrijFindVOG.Size = new System.Drawing.Size(75, 23);
             this.btnVrijFindVOG.TabIndex = 57;
@@ -583,7 +584,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(210, 618);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 19);
             this.button3.TabIndex = 60;
@@ -592,7 +593,6 @@
             // 
             // gbHulpbehoevende
             // 
-            this.gbHulpbehoevende.Controls.Add(this.dtpHulpBirthDate);
             this.gbHulpbehoevende.Controls.Add(this.tbHulpPhonenumber);
             this.gbHulpbehoevende.Controls.Add(this.label19);
             this.gbHulpbehoevende.Controls.Add(this.label18);
@@ -612,15 +612,24 @@
             this.gbHulpbehoevende.Controls.Add(this.tbHulpFirstname);
             this.gbHulpbehoevende.Controls.Add(this.tbHulpEmail);
             this.gbHulpbehoevende.Controls.Add(this.label25);
-            this.gbHulpbehoevende.Location = new System.Drawing.Point(378, 37);
+            this.gbHulpbehoevende.Location = new System.Drawing.Point(12, 39);
             this.gbHulpbehoevende.Name = "gbHulpbehoevende";
-            this.gbHulpbehoevende.Size = new System.Drawing.Size(346, 349);
+            this.gbHulpbehoevende.Size = new System.Drawing.Size(354, 349);
             this.gbHulpbehoevende.TabIndex = 61;
             this.gbHulpbehoevende.TabStop = false;
             this.gbHulpbehoevende.Text = "Hulpbehoevende";
             // 
+            // dtpHulpBirthDate
+            // 
+            this.dtpHulpBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHulpBirthDate.Location = new System.Drawing.Point(113, 59);
+            this.dtpHulpBirthDate.Name = "dtpHulpBirthDate";
+            this.dtpHulpBirthDate.Size = new System.Drawing.Size(205, 21);
+            this.dtpHulpBirthDate.TabIndex = 62;
+            // 
             // gbVrijwilliger
             // 
+            this.gbVrijwilliger.Controls.Add(this.dtpHulpBirthDate);
             this.gbVrijwilliger.Controls.Add(this.dtpVrijBirthDate);
             this.gbVrijwilliger.Controls.Add(this.btnVrijFindPhoto);
             this.gbVrijwilliger.Controls.Add(this.tbVrijPhoto);
@@ -651,12 +660,20 @@
             this.gbVrijwilliger.Controls.Add(this.tbVrijTransport);
             this.gbVrijwilliger.Controls.Add(this.tbVrijPhonenumber);
             this.gbVrijwilliger.Controls.Add(this.tbVrijCompetences);
-            this.gbVrijwilliger.Location = new System.Drawing.Point(12, 37);
+            this.gbVrijwilliger.Location = new System.Drawing.Point(12, 39);
             this.gbVrijwilliger.Name = "gbVrijwilliger";
-            this.gbVrijwilliger.Size = new System.Drawing.Size(331, 497);
+            this.gbVrijwilliger.Size = new System.Drawing.Size(360, 482);
             this.gbVrijwilliger.TabIndex = 62;
             this.gbVrijwilliger.TabStop = false;
             this.gbVrijwilliger.Text = "Vrijwilliger";
+            // 
+            // dtpVrijBirthDate
+            // 
+            this.dtpVrijBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpVrijBirthDate.Location = new System.Drawing.Point(114, 59);
+            this.dtpVrijBirthDate.Name = "dtpVrijBirthDate";
+            this.dtpVrijBirthDate.Size = new System.Drawing.Size(205, 21);
+            this.dtpVrijBirthDate.TabIndex = 61;
             // 
             // btnVrijFindPhoto
             // 
@@ -678,22 +695,6 @@
             this.tbVrijPhoto.Size = new System.Drawing.Size(126, 21);
             this.tbVrijPhoto.TabIndex = 59;
             // 
-            // dtpVrijBirthDate
-            // 
-            this.dtpVrijBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpVrijBirthDate.Location = new System.Drawing.Point(114, 60);
-            this.dtpVrijBirthDate.Name = "dtpVrijBirthDate";
-            this.dtpVrijBirthDate.Size = new System.Drawing.Size(205, 21);
-            this.dtpVrijBirthDate.TabIndex = 61;
-            // 
-            // dtpHulpBirthDate
-            // 
-            this.dtpHulpBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHulpBirthDate.Location = new System.Drawing.Point(127, 59);
-            this.dtpHulpBirthDate.Name = "dtpHulpBirthDate";
-            this.dtpHulpBirthDate.Size = new System.Drawing.Size(205, 21);
-            this.dtpHulpBirthDate.TabIndex = 62;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -704,18 +705,29 @@
             this.label1.TabIndex = 63;
             this.label1.Text = "Ik ben een:";
             // 
+            // btnCreateAccount
+            // 
+            this.btnCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateAccount.Location = new System.Drawing.Point(293, 3);
+            this.btnCreateAccount.Name = "btnCreateAccount";
+            this.btnCreateAccount.Size = new System.Drawing.Size(79, 37);
+            this.btnCreateAccount.TabIndex = 64;
+            this.btnCreateAccount.Text = "Inschrijven";
+            this.btnCreateAccount.UseVisualStyleBackColor = true;
+            // 
             // InschrijvenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 521);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(382, 533);
+            this.Controls.Add(this.btnCreateAccount);
             this.Controls.Add(this.gbVrijwilliger);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.gbHulpbehoevende);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InschrijvenForm";
             this.Text = "Inschrijven";
             this.gbHulpbehoevende.ResumeLayout(false);
@@ -785,5 +797,6 @@
         private System.Windows.Forms.DateTimePicker dtpVrijBirthDate;
         private System.Windows.Forms.DateTimePicker dtpHulpBirthDate;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCreateAccount;
     }
 }

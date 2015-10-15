@@ -45,8 +45,8 @@
             // btnLogOut
             // 
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btnLogOut.Location = new System.Drawing.Point(11, 11);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Location = new System.Drawing.Point(26, 11);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(92, 37);
             this.btnLogOut.TabIndex = 25;
@@ -57,7 +57,7 @@
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnEdit.Location = new System.Drawing.Point(494, 57);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(70, 24);
             this.btnEdit.TabIndex = 22;
@@ -68,7 +68,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox1.Location = new System.Drawing.Point(323, 85);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 295);
@@ -112,7 +112,7 @@
             // 
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnRemove.Location = new System.Drawing.Point(409, 57);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(81, 24);
             this.btnRemove.TabIndex = 17;
@@ -176,7 +176,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRemove);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BeheerderForm";
             this.Text = "Beheer";
             this.ResumeLayout(false);

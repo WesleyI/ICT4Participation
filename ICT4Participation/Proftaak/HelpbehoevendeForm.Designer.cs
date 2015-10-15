@@ -30,79 +30,73 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.btnAcceptHelpRequest = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAddHelpRequest = new System.Windows.Forms.Button();
+            this.btnRemoveAccount = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnSendMessage = new System.Windows.Forms.Button();
+            this.tbChatMessage = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.tbProblem = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbPhonenumber = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbAddres = new System.Windows.Forms.TextBox();
+            this.tbStreet = new System.Windows.Forms.TextBox();
+            this.tbCity = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnAddMeeting = new System.Windows.Forms.Button();
+            this.btnAddRecensie = new System.Windows.Forms.Button();
+            this.nudScore = new System.Windows.Forms.NumericUpDown();
+            this.tbRecensie = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbMeetingDescription = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dtpMeetingDate = new System.Windows.Forms.DateTimePicker();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbHulpRecensie = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.tbHulpAnswer = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lblHulpUsername = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.lbHelpRequests = new System.Windows.Forms.ListBox();
+            this.lbAcceptedHelpRequests = new System.Windows.Forms.ListBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lbChatVrijwilligers = new System.Windows.Forms.ListBox();
+            this.lbChatMessage = new System.Windows.Forms.ListBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lbVrijwilligers = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lbAnswers = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).BeginInit();
             this.tabPage5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -112,101 +106,51 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tabControl1.Location = new System.Drawing.Point(9, 10);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(568, 389);
+            this.tabControl1.Size = new System.Drawing.Size(614, 442);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.textBox13);
+            this.tabPage1.Controls.Add(this.label19);
+            this.tabPage1.Controls.Add(this.lbAcceptedHelpRequests);
+            this.tabPage1.Controls.Add(this.lbHelpRequests);
+            this.tabPage1.Controls.Add(this.textBox17);
+            this.tabPage1.Controls.Add(this.btnAcceptHelpRequest);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.textBox12);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.btnAddHelpRequest);
+            this.tabPage1.Controls.Add(this.btnRemoveAccount);
+            this.tabPage1.Controls.Add(this.btnLogOut);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(560, 363);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(606, 414);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Hulpvragen";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnAcceptHelpRequest
             // 
-            this.button8.Location = new System.Drawing.Point(481, 205);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(77, 24);
-            this.button8.TabIndex = 54;
-            this.button8.Text = "Bevestigen";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(197, 233);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(361, 128);
-            this.panel2.TabIndex = 53;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(308, 28);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(28, 13);
-            this.label19.TabIndex = 51;
-            this.label19.Text = "Foto";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(12, 15);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(116, 13);
-            this.label20.TabIndex = 50;
-            this.label20.Text = "Biografie van vrijwilliger";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(284, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 69);
-            this.pictureBox2.TabIndex = 48;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(7, 233);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(187, 128);
-            this.textBox13.TabIndex = 52;
-            this.textBox13.Text = "Dit is een lijst met openstaande hulpvragen die geaccepteerd zijn door een vrijwi" +
-    "lliger.";
+            this.btnAcceptHelpRequest.Location = new System.Drawing.Point(9, 376);
+            this.btnAcceptHelpRequest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAcceptHelpRequest.Name = "btnAcceptHelpRequest";
+            this.btnAcceptHelpRequest.Size = new System.Drawing.Size(77, 35);
+            this.btnAcceptHelpRequest.TabIndex = 54;
+            this.btnAcceptHelpRequest.Text = "Bevestigen";
+            this.btnAcceptHelpRequest.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(4, 200);
+            this.label18.Location = new System.Drawing.Point(6, 207);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(165, 13);
@@ -215,60 +159,50 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(194, 71);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Location = new System.Drawing.Point(225, 70);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(365, 126);
             this.textBox12.TabIndex = 26;
             this.textBox12.Text = "Hier is de geselecteerde hulpvraag te lezen, met alle details.";
             // 
-            // button2
+            // btnAddHelpRequest
             // 
-            this.button2.Location = new System.Drawing.Point(4, 28);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 24);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Hulpvraag uitzetten";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddHelpRequest.Location = new System.Drawing.Point(3, 7);
+            this.btnAddHelpRequest.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddHelpRequest.Name = "btnAddHelpRequest";
+            this.btnAddHelpRequest.Size = new System.Drawing.Size(168, 40);
+            this.btnAddHelpRequest.TabIndex = 25;
+            this.btnAddHelpRequest.Text = "Hulpvraag uitzetten";
+            this.btnAddHelpRequest.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // btnRemoveAccount
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 71);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 126);
-            this.textBox1.TabIndex = 23;
-            this.textBox1.Text = "Dit is een lijst met hulpvragen van de hulpbehoevende.";
+            this.btnRemoveAccount.Location = new System.Drawing.Point(461, 4);
+            this.btnRemoveAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRemoveAccount.Name = "btnRemoveAccount";
+            this.btnRemoveAccount.Size = new System.Drawing.Size(129, 30);
+            this.btnRemoveAccount.TabIndex = 20;
+            this.btnRemoveAccount.Text = "Account uitschrijven";
+            this.btnRemoveAccount.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnLogOut
             // 
-            this.button1.Location = new System.Drawing.Point(86, 5);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 19);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Account uitschrijven";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(4, 5);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 19);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "Afmelden";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnLogOut.Location = new System.Drawing.Point(379, 4);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(77, 30);
+            this.btnLogOut.TabIndex = 19;
+            this.btnLogOut.Text = "Afmelden";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 54);
+            this.label1.Location = new System.Drawing.Point(6, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 13);
@@ -277,113 +211,94 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox11);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.lbChatMessage);
+            this.tabPage2.Controls.Add(this.lbChatVrijwilligers);
+            this.tabPage2.Controls.Add(this.btnSendMessage);
+            this.tabPage2.Controls.Add(this.tbChatMessage);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(560, 363);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(606, 414);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Chat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // btnSendMessage
             // 
-            this.textBox11.Location = new System.Drawing.Point(4, 5);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(180, 357);
-            this.textBox11.TabIndex = 12;
-            this.textBox11.Text = "Lijst met vrijwiliigers.";
+            this.btnSendMessage.Location = new System.Drawing.Point(501, 318);
+            this.btnSendMessage.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSendMessage.Name = "btnSendMessage";
+            this.btnSendMessage.Size = new System.Drawing.Size(88, 24);
+            this.btnSendMessage.TabIndex = 11;
+            this.btnSendMessage.Text = "Verzenden";
+            this.btnSendMessage.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // tbChatMessage
             // 
-            this.button3.Location = new System.Drawing.Point(492, 297);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 24);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Verzenden";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(190, 325);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(368, 36);
-            this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "Hier kan een bericht geschreven worden.";
+            this.tbChatMessage.Location = new System.Drawing.Point(191, 346);
+            this.tbChatMessage.Margin = new System.Windows.Forms.Padding(2);
+            this.tbChatMessage.Multiline = true;
+            this.tbChatMessage.Name = "tbChatMessage";
+            this.tbChatMessage.Size = new System.Drawing.Size(399, 54);
+            this.tbChatMessage.TabIndex = 10;
+            this.tbChatMessage.Text = "Hier kan een bericht geschreven worden.";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(188, 309);
+            this.label8.Location = new System.Drawing.Point(188, 329);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.Size = new System.Drawing.Size(48, 15);
             this.label8.TabIndex = 9;
             this.label8.Text = "Bericht:";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(190, 5);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(368, 288);
-            this.textBox6.TabIndex = 8;
-            this.textBox6.Text = "Alle verstuurde berichten.";
-            // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox18);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.tbProblem);
             this.tabPage3.Controls.Add(this.label21);
             this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.textBox19);
+            this.tabPage3.Controls.Add(this.btnEdit);
+            this.tabPage3.Controls.Add(this.tbEmail);
             this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.tbPhonenumber);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.textBox7);
-            this.tabPage3.Controls.Add(this.textBox8);
-            this.tabPage3.Controls.Add(this.textBox9);
+            this.tabPage3.Controls.Add(this.tbAddres);
+            this.tabPage3.Controls.Add(this.tbStreet);
+            this.tabPage3.Controls.Add(this.tbCity);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Size = new System.Drawing.Size(560, 363);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(606, 414);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Contactgegevens";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox18
+            // tbProblem
             // 
-            this.textBox18.Location = new System.Drawing.Point(130, 223);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(204, 104);
-            this.textBox18.TabIndex = 62;
+            this.tbProblem.Location = new System.Drawing.Point(126, 240);
+            this.tbProblem.Margin = new System.Windows.Forms.Padding(2);
+            this.tbProblem.Multiline = true;
+            this.tbProblem.Name = "tbProblem";
+            this.tbProblem.Size = new System.Drawing.Size(204, 104);
+            this.tbProblem.TabIndex = 62;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(23, 225);
+            this.label21.Location = new System.Drawing.Point(8, 243);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(94, 13);
+            this.label21.Size = new System.Drawing.Size(114, 15);
             this.label21.TabIndex = 61;
             this.label21.Text = "Prombleemstelling:";
             // 
@@ -391,56 +306,56 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(23, 200);
+            this.label15.Location = new System.Drawing.Point(8, 230);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(55, 13);
             this.label15.TabIndex = 60;
             this.label15.Text = "Overige:";
             // 
-            // button5
+            // btnEdit
             // 
-            this.button5.Location = new System.Drawing.Point(277, 331);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 19);
-            this.button5.TabIndex = 59;
-            this.button5.Text = "Wijzigen";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(253, 348);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(76, 33);
+            this.btnEdit.TabIndex = 59;
+            this.btnEdit.Text = "Wijzigen";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // textBox19
+            // tbEmail
             // 
-            this.textBox19.Location = new System.Drawing.Point(130, 165);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(204, 20);
-            this.textBox19.TabIndex = 58;
+            this.tbEmail.Location = new System.Drawing.Point(126, 182);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(204, 21);
+            this.tbEmail.TabIndex = 58;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(23, 165);
+            this.label22.Location = new System.Drawing.Point(8, 183);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 13);
+            this.label22.Size = new System.Drawing.Size(77, 15);
             this.label22.TabIndex = 57;
             this.label22.Text = "E-mailadres:";
             // 
-            // textBox10
+            // tbPhonenumber
             // 
-            this.textBox10.Location = new System.Drawing.Point(130, 142);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(204, 20);
-            this.textBox10.TabIndex = 56;
+            this.tbPhonenumber.Location = new System.Drawing.Point(126, 159);
+            this.tbPhonenumber.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPhonenumber.Name = "tbPhonenumber";
+            this.tbPhonenumber.Size = new System.Drawing.Size(204, 21);
+            this.tbPhonenumber.TabIndex = 56;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 142);
+            this.label12.Location = new System.Drawing.Point(8, 160);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 13);
+            this.label12.Size = new System.Drawing.Size(105, 15);
             this.label12.TabIndex = 55;
             this.label12.Text = "Telefoonnummer:";
             // 
@@ -448,64 +363,64 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(23, 117);
+            this.label9.Location = new System.Drawing.Point(8, 147);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
             this.label9.TabIndex = 54;
             this.label9.Text = "Contact:";
             // 
-            // textBox7
+            // tbAddres
             // 
-            this.textBox7.Location = new System.Drawing.Point(130, 86);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(204, 20);
-            this.textBox7.TabIndex = 53;
+            this.tbAddres.Location = new System.Drawing.Point(126, 103);
+            this.tbAddres.Margin = new System.Windows.Forms.Padding(2);
+            this.tbAddres.Name = "tbAddres";
+            this.tbAddres.Size = new System.Drawing.Size(204, 21);
+            this.tbAddres.TabIndex = 53;
             // 
-            // textBox8
+            // tbStreet
             // 
-            this.textBox8.Location = new System.Drawing.Point(130, 63);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(204, 20);
-            this.textBox8.TabIndex = 52;
+            this.tbStreet.Location = new System.Drawing.Point(126, 80);
+            this.tbStreet.Margin = new System.Windows.Forms.Padding(2);
+            this.tbStreet.Name = "tbStreet";
+            this.tbStreet.Size = new System.Drawing.Size(204, 21);
+            this.tbStreet.TabIndex = 52;
             // 
-            // textBox9
+            // tbCity
             // 
-            this.textBox9.Location = new System.Drawing.Point(130, 41);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(204, 20);
-            this.textBox9.TabIndex = 51;
+            this.tbCity.Location = new System.Drawing.Point(126, 58);
+            this.tbCity.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.Size = new System.Drawing.Size(204, 21);
+            this.tbCity.TabIndex = 51;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(23, 89);
+            this.label10.Location = new System.Drawing.Point(8, 107);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 13);
+            this.label10.Size = new System.Drawing.Size(82, 15);
             this.label10.TabIndex = 50;
             this.label10.Text = "Huisnummer:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 66);
+            this.label11.Location = new System.Drawing.Point(8, 84);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 13);
+            this.label11.Size = new System.Drawing.Size(74, 15);
             this.label11.TabIndex = 49;
             this.label11.Text = "Straatnaam:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(23, 43);
+            this.label13.Location = new System.Drawing.Point(8, 61);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 13);
+            this.label13.Size = new System.Drawing.Size(75, 15);
             this.label13.TabIndex = 48;
             this.label13.Text = "Woonplaats:";
             // 
@@ -513,7 +428,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(23, 22);
+            this.label14.Location = new System.Drawing.Point(8, 48);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(43, 13);
@@ -522,255 +437,151 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.label2);
-            this.tabPage4.Controls.Add(this.numericUpDown1);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.dateTimePicker1);
-            this.tabPage4.Controls.Add(this.label3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Controls.Add(this.groupBox3);
+            this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Controls.Add(this.groupBox1);
+            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Size = new System.Drawing.Size(560, 363);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(606, 414);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Vrijwilligers";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnAddMeeting
             // 
-            this.button7.Location = new System.Drawing.Point(460, 223);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(77, 24);
-            this.button7.TabIndex = 51;
-            this.button7.Text = "Aanvragen";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnAddMeeting.Location = new System.Drawing.Point(155, 14);
+            this.btnAddMeeting.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddMeeting.Name = "btnAddMeeting";
+            this.btnAddMeeting.Size = new System.Drawing.Size(77, 24);
+            this.btnAddMeeting.TabIndex = 51;
+            this.btnAddMeeting.Text = "Aanvragen";
+            this.btnAddMeeting.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnAddRecensie
             // 
-            this.button6.Location = new System.Drawing.Point(221, 202);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 19);
-            this.button6.TabIndex = 50;
-            this.button6.Text = "Sturen";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnAddRecensie.Location = new System.Drawing.Point(212, 14);
+            this.btnAddRecensie.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddRecensie.Name = "btnAddRecensie";
+            this.btnAddRecensie.Size = new System.Drawing.Size(56, 29);
+            this.btnAddRecensie.TabIndex = 50;
+            this.btnAddRecensie.Text = "Sturen";
+            this.btnAddRecensie.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // nudScore
             // 
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(311, 34);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 145);
-            this.panel1.TabIndex = 49;
+            this.nudScore.Location = new System.Drawing.Point(118, 19);
+            this.nudScore.Margin = new System.Windows.Forms.Padding(2);
+            this.nudScore.Name = "nudScore";
+            this.nudScore.Size = new System.Drawing.Size(90, 21);
+            this.nudScore.TabIndex = 45;
             // 
-            // label17
+            // tbRecensie
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(172, 26);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(28, 13);
-            this.label17.TabIndex = 51;
-            this.label17.Text = "Foto";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(12, 15);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(116, 13);
-            this.label16.TabIndex = 50;
-            this.label16.Text = "Biografie van vrijwilliger";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(148, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 69);
-            this.pictureBox1.TabIndex = 48;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(18, 34);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 145);
-            this.textBox2.TabIndex = 47;
-            this.textBox2.Text = "Dit is een lijst van vrijwilligers.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Vrijwilligers:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(127, 202);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(90, 20);
-            this.numericUpDown1.TabIndex = 45;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(18, 223);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(260, 111);
-            this.textBox4.TabIndex = 44;
-            this.textBox4.Text = "Hier kan de gebruiker een recensie over een vrijwilliger schrijven.";
+            this.tbRecensie.Location = new System.Drawing.Point(8, 45);
+            this.tbRecensie.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRecensie.Multiline = true;
+            this.tbRecensie.Name = "tbRecensie";
+            this.tbRecensie.Size = new System.Drawing.Size(260, 146);
+            this.tbRecensie.TabIndex = 44;
+            this.tbRecensie.Text = "Hier kan de gebruiker een recensie over een vrijwilliger schrijven.";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 206);
+            this.label7.Location = new System.Drawing.Point(7, 21);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
+            this.label7.Size = new System.Drawing.Size(77, 15);
             this.label7.TabIndex = 43;
-            this.label7.Text = "Recensie:";
+            this.label7.Text = "Beoordeling:";
             // 
-            // label6
+            // tbMeetingDescription
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 189);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Beoordelen:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(311, 297);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(227, 37);
-            this.textBox3.TabIndex = 41;
-            this.textBox3.Text = "Hier kan de gebruiker de reden van het kennismakingsgesprek aangeven.";
+            this.tbMeetingDescription.Location = new System.Drawing.Point(6, 88);
+            this.tbMeetingDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.tbMeetingDescription.Multiline = true;
+            this.tbMeetingDescription.Name = "tbMeetingDescription";
+            this.tbMeetingDescription.Size = new System.Drawing.Size(227, 102);
+            this.tbMeetingDescription.TabIndex = 41;
+            this.tbMeetingDescription.Text = "Hier kan de gebruiker de reden van het kennismakingsgesprek aangeven.";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(310, 280);
+            this.label5.Location = new System.Drawing.Point(5, 71);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 40;
             this.label5.Text = "Reden:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(310, 242);
+            this.label4.Location = new System.Drawing.Point(5, 33);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(47, 15);
             this.label4.TabIndex = 39;
             this.label4.Text = "Datum:";
             // 
-            // dateTimePicker1
+            // dtpMeetingDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(312, 260);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(310, 226);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 13);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Gesprek aanvragen:";
+            this.dtpMeetingDate.Location = new System.Drawing.Point(7, 51);
+            this.dtpMeetingDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpMeetingDate.Name = "dtpMeetingDate";
+            this.dtpMeetingDate.Size = new System.Drawing.Size(226, 21);
+            this.dtpMeetingDate.TabIndex = 38;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.textBox16);
-            this.tabPage5.Controls.Add(this.label24);
-            this.tabPage5.Controls.Add(this.textBox15);
-            this.tabPage5.Controls.Add(this.textBox14);
+            this.tabPage5.Controls.Add(this.lbAnswers);
+            this.tabPage5.Controls.Add(this.tbHulpRecensie);
+            this.tabPage5.Controls.Add(this.lblUsername);
+            this.tabPage5.Controls.Add(this.tbHulpAnswer);
             this.tabPage5.Controls.Add(this.label23);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 24);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(560, 363);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(606, 414);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Reacties";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // textBox16
+            // tbHulpRecensie
             // 
-            this.textBox16.Location = new System.Drawing.Point(202, 24);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(342, 153);
-            this.textBox16.TabIndex = 56;
-            this.textBox16.Text = "Hier is de recensie van de hulpbehoevende te lezen.";
+            this.tbHulpRecensie.Location = new System.Drawing.Point(202, 24);
+            this.tbHulpRecensie.Margin = new System.Windows.Forms.Padding(2);
+            this.tbHulpRecensie.Multiline = true;
+            this.tbHulpRecensie.Name = "tbHulpRecensie";
+            this.tbHulpRecensie.Size = new System.Drawing.Size(400, 153);
+            this.tbHulpRecensie.TabIndex = 56;
+            this.tbHulpRecensie.Text = "Hier is de recensie van de hulpbehoevende te lezen.";
             // 
-            // label24
+            // lblUsername
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(200, 7);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(111, 13);
-            this.label24.TabIndex = 55;
-            this.label24.Text = "\"Naam vrijwilliger\"";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(200, 7);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(111, 13);
+            this.lblUsername.TabIndex = 55;
+            this.lblUsername.Text = "\"Naam vrijwilliger\"";
             // 
-            // textBox15
+            // tbHulpAnswer
             // 
-            this.textBox15.Location = new System.Drawing.Point(202, 180);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(342, 168);
-            this.textBox15.TabIndex = 54;
-            this.textBox15.Text = "Hier is de reactie van de vrijwilliger te lezen.";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(12, 24);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(187, 325);
-            this.textBox14.TabIndex = 53;
-            this.textBox14.Text = "Dit is een lijst met reacties op recensies geschreven door de hulpbehoevende.";
+            this.tbHulpAnswer.Location = new System.Drawing.Point(202, 180);
+            this.tbHulpAnswer.Margin = new System.Windows.Forms.Padding(2);
+            this.tbHulpAnswer.Multiline = true;
+            this.tbHulpAnswer.Name = "tbHulpAnswer";
+            this.tbHulpAnswer.Size = new System.Drawing.Size(400, 223);
+            this.tbHulpAnswer.TabIndex = 54;
+            this.tbHulpAnswer.Text = "Hier is de reactie van de vrijwilliger te lezen.";
             // 
             // label23
             // 
@@ -783,44 +594,176 @@
             this.label23.TabIndex = 52;
             this.label23.Text = "Reacties:";
             // 
-            // label25
+            // lblHulpUsername
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(481, 7);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(92, 13);
-            this.label25.TabIndex = 55;
-            this.label25.Text = "\"Naam gebruiker\"";
+            this.lblHulpUsername.AutoSize = true;
+            this.lblHulpUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblHulpUsername.Location = new System.Drawing.Point(481, 7);
+            this.lblHulpUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHulpUsername.Name = "lblHulpUsername";
+            this.lblHulpUsername.Size = new System.Drawing.Size(104, 15);
+            this.lblHulpUsername.TabIndex = 55;
+            this.lblHulpUsername.Text = "\"Naam gebruiker\"";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(225, 228);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(365, 126);
+            this.textBox17.TabIndex = 55;
+            this.textBox17.Text = "Biografie van de vrijwilliger";
+            // 
+            // lbHelpRequests
+            // 
+            this.lbHelpRequests.FormattingEnabled = true;
+            this.lbHelpRequests.ItemHeight = 15;
+            this.lbHelpRequests.Location = new System.Drawing.Point(9, 70);
+            this.lbHelpRequests.Name = "lbHelpRequests";
+            this.lbHelpRequests.Size = new System.Drawing.Size(187, 124);
+            this.lbHelpRequests.TabIndex = 56;
+            // 
+            // lbAcceptedHelpRequests
+            // 
+            this.lbAcceptedHelpRequests.FormattingEnabled = true;
+            this.lbAcceptedHelpRequests.ItemHeight = 15;
+            this.lbAcceptedHelpRequests.Location = new System.Drawing.Point(9, 228);
+            this.lbAcceptedHelpRequests.Name = "lbAcceptedHelpRequests";
+            this.lbAcceptedHelpRequests.Size = new System.Drawing.Size(187, 124);
+            this.lbAcceptedHelpRequests.TabIndex = 57;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 358);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(304, 15);
+            this.label19.TabIndex = 58;
+            this.label19.Text = "Klik hier om de geselecteerde hulpvraag te accepteren";
+            // 
+            // lbChatVrijwilligers
+            // 
+            this.lbChatVrijwilligers.FormattingEnabled = true;
+            this.lbChatVrijwilligers.ItemHeight = 15;
+            this.lbChatVrijwilligers.Location = new System.Drawing.Point(6, 6);
+            this.lbChatVrijwilligers.Name = "lbChatVrijwilligers";
+            this.lbChatVrijwilligers.Size = new System.Drawing.Size(168, 394);
+            this.lbChatVrijwilligers.TabIndex = 12;
+            // 
+            // lbChatMessage
+            // 
+            this.lbChatMessage.FormattingEnabled = true;
+            this.lbChatMessage.ItemHeight = 15;
+            this.lbChatMessage.Location = new System.Drawing.Point(191, 6);
+            this.lbChatMessage.Name = "lbChatMessage";
+            this.lbChatMessage.Size = new System.Drawing.Size(398, 304);
+            this.lbChatMessage.TabIndex = 13;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(4, 15);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(303, 15);
+            this.label20.TabIndex = 63;
+            this.label20.Text = "Wijzig hier je gegevens en druk vervolgens op wijzigen";
+            // 
+            // lbVrijwilligers
+            // 
+            this.lbVrijwilligers.FormattingEnabled = true;
+            this.lbVrijwilligers.ItemHeight = 15;
+            this.lbVrijwilligers.Location = new System.Drawing.Point(6, 20);
+            this.lbVrijwilligers.Name = "lbVrijwilligers";
+            this.lbVrijwilligers.Size = new System.Drawing.Size(198, 154);
+            this.lbVrijwilligers.TabIndex = 52;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(226, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(353, 154);
+            this.textBox1.TabIndex = 56;
+            this.textBox1.Text = "Biografie van de vrijwilliger";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.lbVrijwilligers);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.groupBox1.Location = new System.Drawing.Point(6, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(586, 186);
+            this.groupBox1.TabIndex = 57;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Vrijwilligers";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tbRecensie);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.nudScore);
+            this.groupBox2.Controls.Add(this.btnAddRecensie);
+            this.groupBox2.Location = new System.Drawing.Point(6, 197);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(277, 196);
+            this.groupBox2.TabIndex = 58;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Beoordeling";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dtpMeetingDate);
+            this.groupBox3.Controls.Add(this.btnAddMeeting);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.tbMeetingDescription);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(289, 198);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(248, 195);
+            this.groupBox3.TabIndex = 59;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Gesprek aanvragen";
+            // 
+            // lbAnswers
+            // 
+            this.lbAnswers.FormattingEnabled = true;
+            this.lbAnswers.ItemHeight = 15;
+            this.lbAnswers.Location = new System.Drawing.Point(6, 24);
+            this.lbAnswers.Name = "lbAnswers";
+            this.lbAnswers.Size = new System.Drawing.Size(191, 379);
+            this.lbAnswers.TabIndex = 57;
             // 
             // Hulpbehoevende
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 409);
-            this.Controls.Add(this.label25);
+            this.ClientSize = new System.Drawing.Size(634, 452);
+            this.Controls.Add(this.lblHulpUsername);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Hulpbehoevende";
             this.Text = "Hulpbehoevende";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -832,65 +775,60 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btnRemoveAccount;
+        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button btnAddHelpRequest;
+        private System.Windows.Forms.Button btnSendMessage;
+        private System.Windows.Forms.TextBox tbChatMessage;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbPhonenumber;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbAddres;
+        private System.Windows.Forms.TextBox tbStreet;
+        private System.Windows.Forms.TextBox tbCity;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox tbProblem;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.NumericUpDown nudScore;
+        private System.Windows.Forms.TextBox tbRecensie;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbMeetingDescription;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.DateTimePicker dtpMeetingDate;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnAddMeeting;
+        private System.Windows.Forms.Button btnAddRecensie;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.TextBox tbHulpAnswer;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button btnAcceptHelpRequest;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label lblHulpUsername;
+        private System.Windows.Forms.TextBox tbHulpRecensie;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ListBox lbAcceptedHelpRequests;
+        private System.Windows.Forms.ListBox lbHelpRequests;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.ListBox lbChatMessage;
+        private System.Windows.Forms.ListBox lbChatVrijwilligers;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox lbVrijwilligers;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox lbAnswers;
     }
 }
