@@ -111,7 +111,7 @@
             this.cbSoort.Name = "cbSoort";
             this.cbSoort.Size = new System.Drawing.Size(115, 23);
             this.cbSoort.TabIndex = 0;
-            //this.cbSoort.SelectedValueChanged += new System.EventHandler(this.cbSoort_SelectedValueChanged);
+            this.cbSoort.SelectedValueChanged += new System.EventHandler(this.cbSoort_SelectedValueChanged_1);
             // 
             // label4
             // 
@@ -591,7 +591,6 @@
             this.btnVrijFindVOG.TabIndex = 57;
             this.btnVrijFindVOG.Text = "Bladeren...";
             this.btnVrijFindVOG.UseVisualStyleBackColor = true;
-            //this.btnVrijFindVOG.Click += new System.EventHandler(this.btnVrijFindVOG_Click);
             // 
             // button3
             // 
@@ -790,7 +789,6 @@
             this.btnVrijFindPhoto.TabIndex = 60;
             this.btnVrijFindPhoto.Text = "Bladeren...";
             this.btnVrijFindPhoto.UseVisualStyleBackColor = true;
-            //this.btnVrijFindPhoto.Click += new System.EventHandler(this.btnVrijFindPhoto_Click);
             // 
             // tbVrijPhoto
             // 
@@ -820,7 +818,6 @@
             this.btnCreateAccount.TabIndex = 64;
             this.btnCreateAccount.Text = "Inschrijven";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
-            //this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // InschrijvenForm
             // 
