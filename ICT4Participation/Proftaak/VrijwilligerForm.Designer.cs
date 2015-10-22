@@ -30,6 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbReview = new System.Windows.Forms.ListBox();
+            this.lbMeeting = new System.Windows.Forms.ListBox();
+            this.lbHelpRequest = new System.Windows.Forms.ListBox();
             this.btnAcceptMeeting = new System.Windows.Forms.Button();
             this.btnAcceptHelpRequest = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,13 +42,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRemoveAccount = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbChatmessage = new System.Windows.Forms.ListBox();
+            this.lbHulpbehoevende = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.tbChatmessage = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pbPhoto = new System.Windows.Forms.PictureBox();
             this.btnFindPhoto = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.tbAvailability = new System.Windows.Forms.TextBox();
@@ -67,27 +74,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lbAcceptedMeetings = new System.Windows.Forms.ListBox();
+            this.lbAcceptedByHulpbehoevende = new System.Windows.Forms.ListBox();
+            this.lbAcceptedHelpRequest = new System.Windows.Forms.ListBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lbHelpRequest = new System.Windows.Forms.ListBox();
-            this.lbMeeting = new System.Windows.Forms.ListBox();
-            this.lbReview = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbHulpbehoevende = new System.Windows.Forms.ListBox();
-            this.lbChatmessage = new System.Windows.Forms.ListBox();
-            this.pbPhoto = new System.Windows.Forms.PictureBox();
-            this.lbAcceptedHelpRequest = new System.Windows.Forms.ListBox();
-            this.lbAcceptedByHulpbehoevende = new System.Windows.Forms.ListBox();
-            this.lbAcceptedMeetings = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -98,7 +98,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tabControl1.Location = new System.Drawing.Point(9, 10);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(623, 503);
@@ -118,21 +118,56 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.btnRemoveAccount);
+            this.tabPage1.Controls.Add(this.btnLogOut);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(615, 475);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Systeem";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(317, 51);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(291, 234);
+            this.textBox1.TabIndex = 36;
+            // 
+            // lbReview
+            // 
+            this.lbReview.FormattingEnabled = true;
+            this.lbReview.ItemHeight = 15;
+            this.lbReview.Location = new System.Drawing.Point(5, 334);
+            this.lbReview.Name = "lbReview";
+            this.lbReview.Size = new System.Drawing.Size(260, 124);
+            this.lbReview.TabIndex = 35;
+            // 
+            // lbMeeting
+            // 
+            this.lbMeeting.FormattingEnabled = true;
+            this.lbMeeting.ItemHeight = 15;
+            this.lbMeeting.Location = new System.Drawing.Point(5, 206);
+            this.lbMeeting.Name = "lbMeeting";
+            this.lbMeeting.Size = new System.Drawing.Size(260, 79);
+            this.lbMeeting.TabIndex = 34;
+            // 
+            // lbHelpRequest
+            // 
+            this.lbHelpRequest.FormattingEnabled = true;
+            this.lbHelpRequest.ItemHeight = 15;
+            this.lbHelpRequest.Location = new System.Drawing.Point(5, 51);
+            this.lbHelpRequest.Name = "lbHelpRequest";
+            this.lbHelpRequest.Size = new System.Drawing.Size(260, 94);
+            this.lbHelpRequest.TabIndex = 33;
+            // 
             // btnAcceptMeeting
             // 
             this.btnAcceptMeeting.Location = new System.Drawing.Point(124, 290);
-            this.btnAcceptMeeting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAcceptMeeting.Margin = new System.Windows.Forms.Padding(2);
             this.btnAcceptMeeting.Name = "btnAcceptMeeting";
             this.btnAcceptMeeting.Size = new System.Drawing.Size(141, 24);
             this.btnAcceptMeeting.TabIndex = 32;
@@ -142,7 +177,7 @@
             // btnAcceptHelpRequest
             // 
             this.btnAcceptHelpRequest.Location = new System.Drawing.Point(124, 150);
-            this.btnAcceptHelpRequest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAcceptHelpRequest.Margin = new System.Windows.Forms.Padding(2);
             this.btnAcceptHelpRequest.Name = "btnAcceptHelpRequest";
             this.btnAcceptHelpRequest.Size = new System.Drawing.Size(141, 24);
             this.btnAcceptHelpRequest.TabIndex = 31;
@@ -163,7 +198,7 @@
             // btnAnswer
             // 
             this.btnAnswer.Location = new System.Drawing.Point(482, 307);
-            this.btnAnswer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnswer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnswer.Name = "btnAnswer";
             this.btnAnswer.Size = new System.Drawing.Size(129, 22);
             this.btnAnswer.TabIndex = 29;
@@ -173,7 +208,7 @@
             // tbAnswer
             // 
             this.tbAnswer.Location = new System.Drawing.Point(320, 334);
-            this.tbAnswer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAnswer.Margin = new System.Windows.Forms.Padding(2);
             this.tbAnswer.Multiline = true;
             this.tbAnswer.Name = "tbAnswer";
             this.tbAnswer.Size = new System.Drawing.Size(291, 124);
@@ -214,25 +249,25 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Hulpvragen:";
             // 
-            // button1
+            // btnRemoveAccount
             // 
-            this.button1.Location = new System.Drawing.Point(479, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 28);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Account uitschrijven";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRemoveAccount.Location = new System.Drawing.Point(479, 4);
+            this.btnRemoveAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRemoveAccount.Name = "btnRemoveAccount";
+            this.btnRemoveAccount.Size = new System.Drawing.Size(129, 28);
+            this.btnRemoveAccount.TabIndex = 18;
+            this.btnRemoveAccount.Text = "Account uitschrijven";
+            this.btnRemoveAccount.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnLogOut
             // 
-            this.button4.Location = new System.Drawing.Point(397, 4);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 28);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Afmelden";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLogOut.Location = new System.Drawing.Point(397, 4);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(77, 28);
+            this.btnLogOut.TabIndex = 17;
+            this.btnLogOut.Text = "Afmelden";
+            this.btnLogOut.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -242,18 +277,36 @@
             this.tabPage2.Controls.Add(this.tbChatmessage);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(615, 475);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Chat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lbChatmessage
+            // 
+            this.lbChatmessage.FormattingEnabled = true;
+            this.lbChatmessage.ItemHeight = 15;
+            this.lbChatmessage.Location = new System.Drawing.Point(191, 6);
+            this.lbChatmessage.Name = "lbChatmessage";
+            this.lbChatmessage.Size = new System.Drawing.Size(419, 334);
+            this.lbChatmessage.TabIndex = 18;
+            // 
+            // lbHulpbehoevende
+            // 
+            this.lbHulpbehoevende.FormattingEnabled = true;
+            this.lbHulpbehoevende.ItemHeight = 15;
+            this.lbHulpbehoevende.Location = new System.Drawing.Point(6, 6);
+            this.lbHulpbehoevende.Name = "lbHulpbehoevende";
+            this.lbHulpbehoevende.Size = new System.Drawing.Size(180, 454);
+            this.lbHulpbehoevende.TabIndex = 17;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(519, 345);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 24);
             this.button3.TabIndex = 16;
@@ -263,7 +316,7 @@
             // tbChatmessage
             // 
             this.tbChatmessage.Location = new System.Drawing.Point(191, 373);
-            this.tbChatmessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbChatmessage.Margin = new System.Windows.Forms.Padding(2);
             this.tbChatmessage.Multiline = true;
             this.tbChatmessage.Name = "tbChatmessage";
             this.tbChatmessage.Size = new System.Drawing.Size(420, 87);
@@ -305,18 +358,26 @@
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(615, 475);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Contactgegevens";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // pbPhoto
+            // 
+            this.pbPhoto.Location = new System.Drawing.Point(417, 41);
+            this.pbPhoto.Name = "pbPhoto";
+            this.pbPhoto.Size = new System.Drawing.Size(118, 97);
+            this.pbPhoto.TabIndex = 64;
+            this.pbPhoto.TabStop = false;
+            // 
             // btnFindPhoto
             // 
             this.btnFindPhoto.Location = new System.Drawing.Point(445, 143);
-            this.btnFindPhoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFindPhoto.Margin = new System.Windows.Forms.Padding(2);
             this.btnFindPhoto.Name = "btnFindPhoto";
             this.btnFindPhoto.Size = new System.Drawing.Size(65, 26);
             this.btnFindPhoto.TabIndex = 63;
@@ -326,7 +387,7 @@
             // btnEdit
             // 
             this.btnEdit.Location = new System.Drawing.Point(256, 333);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(72, 36);
             this.btnEdit.TabIndex = 54;
@@ -336,7 +397,7 @@
             // tbAvailability
             // 
             this.tbAvailability.Location = new System.Drawing.Point(125, 284);
-            this.tbAvailability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAvailability.Margin = new System.Windows.Forms.Padding(2);
             this.tbAvailability.Multiline = true;
             this.tbAvailability.Name = "tbAvailability";
             this.tbAvailability.Size = new System.Drawing.Size(204, 45);
@@ -345,7 +406,7 @@
             // tbTransport
             // 
             this.tbTransport.Location = new System.Drawing.Point(125, 262);
-            this.tbTransport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbTransport.Margin = new System.Windows.Forms.Padding(2);
             this.tbTransport.Name = "tbTransport";
             this.tbTransport.Size = new System.Drawing.Size(204, 21);
             this.tbTransport.TabIndex = 52;
@@ -353,7 +414,7 @@
             // tbCompetences
             // 
             this.tbCompetences.Location = new System.Drawing.Point(125, 216);
-            this.tbCompetences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCompetences.Margin = new System.Windows.Forms.Padding(2);
             this.tbCompetences.Multiline = true;
             this.tbCompetences.Name = "tbCompetences";
             this.tbCompetences.Size = new System.Drawing.Size(204, 41);
@@ -403,7 +464,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(128, 163);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(204, 21);
             this.tbEmail.TabIndex = 46;
@@ -421,7 +482,7 @@
             // tbPhone
             // 
             this.tbPhone.Location = new System.Drawing.Point(128, 141);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(204, 21);
             this.tbPhone.TabIndex = 44;
@@ -450,7 +511,7 @@
             // tbAddress
             // 
             this.tbAddress.Location = new System.Drawing.Point(125, 87);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(204, 21);
             this.tbAddress.TabIndex = 25;
@@ -458,7 +519,7 @@
             // tbStreet
             // 
             this.tbStreet.Location = new System.Drawing.Point(125, 64);
-            this.tbStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStreet.Margin = new System.Windows.Forms.Padding(2);
             this.tbStreet.Name = "tbStreet";
             this.tbStreet.Size = new System.Drawing.Size(204, 21);
             this.tbStreet.TabIndex = 24;
@@ -466,7 +527,7 @@
             // tbCity
             // 
             this.tbCity.Location = new System.Drawing.Point(125, 41);
-            this.tbCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCity.Margin = new System.Windows.Forms.Padding(2);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(204, 21);
             this.tbCity.TabIndex = 23;
@@ -522,18 +583,45 @@
             this.tabPage4.Controls.Add(this.textBox16);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(615, 475);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Overzicht";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // lbAcceptedMeetings
+            // 
+            this.lbAcceptedMeetings.FormattingEnabled = true;
+            this.lbAcceptedMeetings.ItemHeight = 15;
+            this.lbAcceptedMeetings.Location = new System.Drawing.Point(18, 339);
+            this.lbAcceptedMeetings.Name = "lbAcceptedMeetings";
+            this.lbAcceptedMeetings.Size = new System.Drawing.Size(199, 124);
+            this.lbAcceptedMeetings.TabIndex = 32;
+            // 
+            // lbAcceptedByHulpbehoevende
+            // 
+            this.lbAcceptedByHulpbehoevende.FormattingEnabled = true;
+            this.lbAcceptedByHulpbehoevende.ItemHeight = 15;
+            this.lbAcceptedByHulpbehoevende.Location = new System.Drawing.Point(19, 198);
+            this.lbAcceptedByHulpbehoevende.Name = "lbAcceptedByHulpbehoevende";
+            this.lbAcceptedByHulpbehoevende.Size = new System.Drawing.Size(198, 94);
+            this.lbAcceptedByHulpbehoevende.TabIndex = 31;
+            // 
+            // lbAcceptedHelpRequest
+            // 
+            this.lbAcceptedHelpRequest.FormattingEnabled = true;
+            this.lbAcceptedHelpRequest.ItemHeight = 15;
+            this.lbAcceptedHelpRequest.Location = new System.Drawing.Point(18, 38);
+            this.lbAcceptedHelpRequest.Name = "lbAcceptedHelpRequest";
+            this.lbAcceptedHelpRequest.Size = new System.Drawing.Size(199, 154);
+            this.lbAcceptedHelpRequest.TabIndex = 30;
+            // 
             // textBox20
             // 
             this.textBox20.Location = new System.Drawing.Point(241, 339);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(370, 124);
@@ -554,7 +642,7 @@
             // textBox16
             // 
             this.textBox16.Location = new System.Drawing.Point(241, 38);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(370, 254);
@@ -583,94 +671,6 @@
             this.lblUsername.TabIndex = 56;
             this.lblUsername.Text = "\"Naam gebruiker\"";
             // 
-            // lbHelpRequest
-            // 
-            this.lbHelpRequest.FormattingEnabled = true;
-            this.lbHelpRequest.ItemHeight = 15;
-            this.lbHelpRequest.Location = new System.Drawing.Point(5, 51);
-            this.lbHelpRequest.Name = "lbHelpRequest";
-            this.lbHelpRequest.Size = new System.Drawing.Size(260, 94);
-            this.lbHelpRequest.TabIndex = 33;
-            // 
-            // lbMeeting
-            // 
-            this.lbMeeting.FormattingEnabled = true;
-            this.lbMeeting.ItemHeight = 15;
-            this.lbMeeting.Location = new System.Drawing.Point(5, 206);
-            this.lbMeeting.Name = "lbMeeting";
-            this.lbMeeting.Size = new System.Drawing.Size(260, 79);
-            this.lbMeeting.TabIndex = 34;
-            // 
-            // lbReview
-            // 
-            this.lbReview.FormattingEnabled = true;
-            this.lbReview.ItemHeight = 15;
-            this.lbReview.Location = new System.Drawing.Point(5, 334);
-            this.lbReview.Name = "lbReview";
-            this.lbReview.Size = new System.Drawing.Size(260, 124);
-            this.lbReview.TabIndex = 35;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(317, 51);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 234);
-            this.textBox1.TabIndex = 36;
-            // 
-            // lbHulpbehoevende
-            // 
-            this.lbHulpbehoevende.FormattingEnabled = true;
-            this.lbHulpbehoevende.ItemHeight = 15;
-            this.lbHulpbehoevende.Location = new System.Drawing.Point(6, 6);
-            this.lbHulpbehoevende.Name = "lbHulpbehoevende";
-            this.lbHulpbehoevende.Size = new System.Drawing.Size(180, 454);
-            this.lbHulpbehoevende.TabIndex = 17;
-            // 
-            // lbChatmessage
-            // 
-            this.lbChatmessage.FormattingEnabled = true;
-            this.lbChatmessage.ItemHeight = 15;
-            this.lbChatmessage.Location = new System.Drawing.Point(191, 6);
-            this.lbChatmessage.Name = "lbChatmessage";
-            this.lbChatmessage.Size = new System.Drawing.Size(419, 334);
-            this.lbChatmessage.TabIndex = 18;
-            // 
-            // pbPhoto
-            // 
-            this.pbPhoto.Location = new System.Drawing.Point(417, 41);
-            this.pbPhoto.Name = "pbPhoto";
-            this.pbPhoto.Size = new System.Drawing.Size(118, 97);
-            this.pbPhoto.TabIndex = 64;
-            this.pbPhoto.TabStop = false;
-            // 
-            // lbAcceptedHelpRequest
-            // 
-            this.lbAcceptedHelpRequest.FormattingEnabled = true;
-            this.lbAcceptedHelpRequest.ItemHeight = 15;
-            this.lbAcceptedHelpRequest.Location = new System.Drawing.Point(18, 38);
-            this.lbAcceptedHelpRequest.Name = "lbAcceptedHelpRequest";
-            this.lbAcceptedHelpRequest.Size = new System.Drawing.Size(199, 154);
-            this.lbAcceptedHelpRequest.TabIndex = 30;
-            // 
-            // lbAcceptedByHulpbehoevende
-            // 
-            this.lbAcceptedByHulpbehoevende.FormattingEnabled = true;
-            this.lbAcceptedByHulpbehoevende.ItemHeight = 15;
-            this.lbAcceptedByHulpbehoevende.Location = new System.Drawing.Point(19, 198);
-            this.lbAcceptedByHulpbehoevende.Name = "lbAcceptedByHulpbehoevende";
-            this.lbAcceptedByHulpbehoevende.Size = new System.Drawing.Size(198, 94);
-            this.lbAcceptedByHulpbehoevende.TabIndex = 31;
-            // 
-            // lbAcceptedMeetings
-            // 
-            this.lbAcceptedMeetings.FormattingEnabled = true;
-            this.lbAcceptedMeetings.ItemHeight = 15;
-            this.lbAcceptedMeetings.Location = new System.Drawing.Point(18, 339);
-            this.lbAcceptedMeetings.Name = "lbAcceptedMeetings";
-            this.lbAcceptedMeetings.Size = new System.Drawing.Size(199, 124);
-            this.lbAcceptedMeetings.TabIndex = 32;
-            // 
             // VrijwilligerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -678,7 +678,7 @@
             this.ClientSize = new System.Drawing.Size(635, 516);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VrijwilligerForm";
             this.Text = "Vrijwilliger";
             this.tabControl1.ResumeLayout(false);
@@ -688,9 +688,9 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,8 +704,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRemoveAccount;
+        private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAnswer;
