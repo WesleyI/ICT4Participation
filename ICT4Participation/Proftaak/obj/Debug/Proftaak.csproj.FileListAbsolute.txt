@@ -46,3 +46,4 @@ C:\Users\Antonio M\Documents\GitHub\ICT4Participation\ICT4Participation\Proftaak
 C:\Users\Antonio M\Documents\GitHub\ICT4Participation\ICT4Participation\Proftaak\obj\Debug\Proftaak.Properties.Resources.resources
 C:\Users\Antonio M\Documents\GitHub\ICT4Participation\ICT4Participation\Proftaak\obj\Debug\Proftaak.VrijwilligerForm.resources
 C:\Users\Antonio M\Documents\GitHub\ICT4Participation\ICT4Participation\Proftaak\obj\Debug\Proftaak.csproj.GenerateResource.Cache
+C:\Users\Antonio M\Documents\GitHub\ICT4Participation\ICT4Participation\Proftaak\bin\Debug\Oracle.DataAccess.dll

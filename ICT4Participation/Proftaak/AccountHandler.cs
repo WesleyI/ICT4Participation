@@ -10,6 +10,7 @@ namespace Proftaak
     {
         private List<Vrijwilliger> vrijwilligers = new List<Vrijwilliger>(); 
         private List<HelpBehoevende> helpBehoevenden = new List<HelpBehoevende>();
+        private List<HelpRequest> helpRequests = new List<HelpRequest>();
 
         public List<Vrijwilliger> Vrijwilligers { get { return vrijwilligers; } }
         public List<HelpBehoevende> HelpBehoevenden { get { return helpBehoevenden; } } 
