@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbSoort = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,8 +78,18 @@
             this.btnVrijFindVOG = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.gbHulpbehoevende = new System.Windows.Forms.GroupBox();
-            this.dtpHulpBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpHulpBirthDate2 = new System.Windows.Forms.DateTimePicker();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tbHulpBevestigWachtwoord = new System.Windows.Forms.TextBox();
+            this.tbHulpWachtwoord = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.gbVrijwilliger = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbVrijBevestigWachtwoord = new System.Windows.Forms.TextBox();
+            this.tbVrijWachtwoord = new System.Windows.Forms.TextBox();
+            this.dtpVrijBirthDate2 = new System.Windows.Forms.DateTimePicker();
             this.dtpVrijBirthDate = new System.Windows.Forms.DateTimePicker();
             this.btnVrijFindPhoto = new System.Windows.Forms.Button();
             this.tbVrijPhoto = new System.Windows.Forms.TextBox();
@@ -89,18 +99,19 @@
             this.gbVrijwilliger.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbSoort
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbSoort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSoort.FormattingEnabled = true;
+            this.cbSoort.Items.AddRange(new object[] {
             "Vrijwilliger",
             "Hulpbehoevende"});
-            this.comboBox1.Location = new System.Drawing.Point(84, 11);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(115, 23);
-            this.comboBox1.TabIndex = 0;
+            this.cbSoort.Location = new System.Drawing.Point(84, 11);
+            this.cbSoort.Margin = new System.Windows.Forms.Padding(2);
+            this.cbSoort.Name = "cbSoort";
+            this.cbSoort.Size = new System.Drawing.Size(115, 23);
+            this.cbSoort.TabIndex = 0;
+            //this.cbSoort.SelectedValueChanged += new System.EventHandler(this.cbSoort_SelectedValueChanged);
             // 
             // label4
             // 
@@ -109,9 +120,9 @@
             this.label4.Location = new System.Drawing.Point(5, 16);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.Size = new System.Drawing.Size(75, 15);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Voornaam:";
+            this.label4.Text = "Voornaam: *";
             // 
             // label5
             // 
@@ -120,9 +131,9 @@
             this.label5.Location = new System.Drawing.Point(5, 62);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 15);
+            this.label5.Size = new System.Drawing.Size(101, 15);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Geboortedatum:";
+            this.label5.Text = "Geboortedatum:*";
             // 
             // label6
             // 
@@ -164,15 +175,15 @@
             this.label9.Location = new System.Drawing.Point(3, 153);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 15);
+            this.label9.Size = new System.Drawing.Size(110, 15);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Telefoonnummer:";
+            this.label9.Text = "Telefoonnummer:*";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(5, 316);
+            this.label10.Location = new System.Drawing.Point(5, 352);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 15);
@@ -183,7 +194,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(5, 198);
+            this.label11.Location = new System.Drawing.Point(5, 242);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(86, 15);
@@ -194,7 +205,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(5, 244);
+            this.label12.Location = new System.Drawing.Point(7, 287);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(51, 15);
@@ -205,7 +216,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(5, 267);
+            this.label13.Location = new System.Drawing.Point(5, 316);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 15);
@@ -215,7 +226,7 @@
             // tbVrijFirstname
             // 
             this.tbVrijFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijFirstname.Location = new System.Drawing.Point(114, 14);
+            this.tbVrijFirstname.Location = new System.Drawing.Point(145, 12);
             this.tbVrijFirstname.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijFirstname.Name = "tbVrijFirstname";
             this.tbVrijFirstname.Size = new System.Drawing.Size(204, 21);
@@ -224,7 +235,7 @@
             // tbVrijCity
             // 
             this.tbVrijCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijCity.Location = new System.Drawing.Point(114, 82);
+            this.tbVrijCity.Location = new System.Drawing.Point(145, 80);
             this.tbVrijCity.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijCity.Name = "tbVrijCity";
             this.tbVrijCity.Size = new System.Drawing.Size(204, 21);
@@ -233,7 +244,7 @@
             // tbVrijStreet
             // 
             this.tbVrijStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijStreet.Location = new System.Drawing.Point(114, 105);
+            this.tbVrijStreet.Location = new System.Drawing.Point(145, 103);
             this.tbVrijStreet.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijStreet.Name = "tbVrijStreet";
             this.tbVrijStreet.Size = new System.Drawing.Size(204, 21);
@@ -242,7 +253,7 @@
             // tbVrijAddress
             // 
             this.tbVrijAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijAddress.Location = new System.Drawing.Point(114, 128);
+            this.tbVrijAddress.Location = new System.Drawing.Point(145, 126);
             this.tbVrijAddress.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijAddress.Name = "tbVrijAddress";
             this.tbVrijAddress.Size = new System.Drawing.Size(204, 21);
@@ -251,7 +262,7 @@
             // tbVrijPhonenumber
             // 
             this.tbVrijPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijPhonenumber.Location = new System.Drawing.Point(114, 151);
+            this.tbVrijPhonenumber.Location = new System.Drawing.Point(145, 149);
             this.tbVrijPhonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijPhonenumber.Name = "tbVrijPhonenumber";
             this.tbVrijPhonenumber.Size = new System.Drawing.Size(204, 21);
@@ -260,7 +271,7 @@
             // tbVrijCompetences
             // 
             this.tbVrijCompetences.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijCompetences.Location = new System.Drawing.Point(114, 196);
+            this.tbVrijCompetences.Location = new System.Drawing.Point(144, 242);
             this.tbVrijCompetences.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijCompetences.Multiline = true;
             this.tbVrijCompetences.Name = "tbVrijCompetences";
@@ -270,7 +281,7 @@
             // tbVrijTransport
             // 
             this.tbVrijTransport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijTransport.Location = new System.Drawing.Point(114, 242);
+            this.tbVrijTransport.Location = new System.Drawing.Point(144, 287);
             this.tbVrijTransport.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijTransport.Name = "tbVrijTransport";
             this.tbVrijTransport.Size = new System.Drawing.Size(204, 21);
@@ -279,21 +290,21 @@
             // tbVrijAvailability
             // 
             this.tbVrijAvailability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijAvailability.Location = new System.Drawing.Point(114, 264);
+            this.tbVrijAvailability.Location = new System.Drawing.Point(144, 313);
             this.tbVrijAvailability.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijAvailability.Multiline = true;
             this.tbVrijAvailability.Name = "tbVrijAvailability";
-            this.tbVrijAvailability.Size = new System.Drawing.Size(204, 45);
+            this.tbVrijAvailability.Size = new System.Drawing.Size(204, 36);
             this.tbVrijAvailability.TabIndex = 23;
             // 
             // tbVrijBio
             // 
             this.tbVrijBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijBio.Location = new System.Drawing.Point(114, 313);
+            this.tbVrijBio.Location = new System.Drawing.Point(145, 354);
             this.tbVrijBio.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijBio.Multiline = true;
             this.tbVrijBio.Name = "tbVrijBio";
-            this.tbVrijBio.Size = new System.Drawing.Size(204, 104);
+            this.tbVrijBio.Size = new System.Drawing.Size(204, 61);
             this.tbVrijBio.TabIndex = 25;
             // 
             // tbHulpPhonenumber
@@ -339,9 +350,9 @@
             this.label15.Location = new System.Drawing.Point(7, 153);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(105, 15);
+            this.label15.Size = new System.Drawing.Size(110, 15);
             this.label15.TabIndex = 32;
-            this.label15.Text = "Telefoonnummer:";
+            this.label15.Text = "Telefoonnummer:*";
             // 
             // label16
             // 
@@ -383,15 +394,15 @@
             this.label19.Location = new System.Drawing.Point(7, 62);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(96, 15);
+            this.label19.Size = new System.Drawing.Size(101, 15);
             this.label19.TabIndex = 28;
-            this.label19.Text = "Geboortedatum:";
+            this.label19.Text = "Geboortedatum:*";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(7, 269);
+            this.label21.Location = new System.Drawing.Point(7, 316);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(114, 15);
@@ -401,7 +412,7 @@
             // tbHulpProblem
             // 
             this.tbHulpProblem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHulpProblem.Location = new System.Drawing.Point(127, 268);
+            this.tbHulpProblem.Location = new System.Drawing.Point(127, 315);
             this.tbHulpProblem.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpProblem.Multiline = true;
             this.tbHulpProblem.Name = "tbHulpProblem";
@@ -415,14 +426,14 @@
             this.label22.Location = new System.Drawing.Point(5, 176);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(77, 15);
+            this.label22.Size = new System.Drawing.Size(82, 15);
             this.label22.TabIndex = 41;
-            this.label22.Text = "E-mailadres:";
+            this.label22.Text = "E-mailadres:*";
             // 
             // tbVrijEmail
             // 
             this.tbVrijEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijEmail.Location = new System.Drawing.Point(114, 173);
+            this.tbVrijEmail.Location = new System.Drawing.Point(145, 171);
             this.tbVrijEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijEmail.Name = "tbVrijEmail";
             this.tbVrijEmail.Size = new System.Drawing.Size(204, 21);
@@ -444,9 +455,9 @@
             this.label23.Location = new System.Drawing.Point(9, 176);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 15);
+            this.label23.Size = new System.Drawing.Size(82, 15);
             this.label23.TabIndex = 43;
-            this.label23.Text = "E-mailadres:";
+            this.label23.Text = "E-mailadres:*";
             // 
             // label24
             // 
@@ -455,14 +466,14 @@
             this.label24.Location = new System.Drawing.Point(4, 38);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(76, 15);
+            this.label24.Size = new System.Drawing.Size(84, 15);
             this.label24.TabIndex = 45;
-            this.label24.Text = "Achternaam:";
+            this.label24.Text = "Achternaam: *";
             // 
             // tbVrijLastname
             // 
             this.tbVrijLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijLastname.Location = new System.Drawing.Point(114, 36);
+            this.tbVrijLastname.Location = new System.Drawing.Point(145, 34);
             this.tbVrijLastname.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijLastname.Name = "tbVrijLastname";
             this.tbVrijLastname.Size = new System.Drawing.Size(204, 21);
@@ -484,9 +495,9 @@
             this.label20.Location = new System.Drawing.Point(9, 38);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 15);
+            this.label20.Size = new System.Drawing.Size(81, 15);
             this.label20.TabIndex = 49;
-            this.label20.Text = "Achternaam:";
+            this.label20.Text = "Achternaam:*";
             // 
             // tbHulpFirstname
             // 
@@ -504,14 +515,14 @@
             this.label25.Location = new System.Drawing.Point(9, 16);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(67, 15);
+            this.label25.Size = new System.Drawing.Size(72, 15);
             this.label25.TabIndex = 47;
-            this.label25.Text = "Voornaam:";
+            this.label25.Text = "Voornaam:*";
             // 
             // tbHulpBio
             // 
             this.tbHulpBio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHulpBio.Location = new System.Drawing.Point(127, 198);
+            this.tbHulpBio.Location = new System.Drawing.Point(127, 245);
             this.tbHulpBio.Margin = new System.Windows.Forms.Padding(2);
             this.tbHulpBio.Multiline = true;
             this.tbHulpBio.Name = "tbHulpBio";
@@ -522,7 +533,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(9, 200);
+            this.label26.Location = new System.Drawing.Point(9, 247);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(56, 15);
@@ -542,7 +553,7 @@
             // tbVrijVog
             // 
             this.tbVrijVog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijVog.Location = new System.Drawing.Point(113, 424);
+            this.tbVrijVog.Location = new System.Drawing.Point(144, 422);
             this.tbVrijVog.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijVog.Name = "tbVrijVog";
             this.tbVrijVog.Size = new System.Drawing.Size(126, 21);
@@ -555,9 +566,9 @@
             this.label14.Location = new System.Drawing.Point(3, 424);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(35, 15);
+            this.label14.Size = new System.Drawing.Size(40, 15);
             this.label14.TabIndex = 55;
-            this.label14.Text = "VOG:";
+            this.label14.Text = "VOG:*";
             // 
             // label27
             // 
@@ -573,13 +584,14 @@
             // btnVrijFindVOG
             // 
             this.btnVrijFindVOG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVrijFindVOG.Location = new System.Drawing.Point(243, 422);
+            this.btnVrijFindVOG.Location = new System.Drawing.Point(274, 420);
             this.btnVrijFindVOG.Margin = new System.Windows.Forms.Padding(2);
             this.btnVrijFindVOG.Name = "btnVrijFindVOG";
             this.btnVrijFindVOG.Size = new System.Drawing.Size(75, 23);
             this.btnVrijFindVOG.TabIndex = 57;
             this.btnVrijFindVOG.Text = "Bladeren...";
             this.btnVrijFindVOG.UseVisualStyleBackColor = true;
+            //this.btnVrijFindVOG.Click += new System.EventHandler(this.btnVrijFindVOG_Click);
             // 
             // button3
             // 
@@ -593,6 +605,11 @@
             // 
             // gbHulpbehoevende
             // 
+            this.gbHulpbehoevende.Controls.Add(this.dtpHulpBirthDate2);
+            this.gbHulpbehoevende.Controls.Add(this.label30);
+            this.gbHulpbehoevende.Controls.Add(this.label29);
+            this.gbHulpbehoevende.Controls.Add(this.tbHulpBevestigWachtwoord);
+            this.gbHulpbehoevende.Controls.Add(this.tbHulpWachtwoord);
             this.gbHulpbehoevende.Controls.Add(this.tbHulpPhonenumber);
             this.gbHulpbehoevende.Controls.Add(this.label19);
             this.gbHulpbehoevende.Controls.Add(this.label18);
@@ -612,24 +629,71 @@
             this.gbHulpbehoevende.Controls.Add(this.tbHulpFirstname);
             this.gbHulpbehoevende.Controls.Add(this.tbHulpEmail);
             this.gbHulpbehoevende.Controls.Add(this.label25);
-            this.gbHulpbehoevende.Location = new System.Drawing.Point(12, 39);
+            this.gbHulpbehoevende.Location = new System.Drawing.Point(12, 52);
             this.gbHulpbehoevende.Name = "gbHulpbehoevende";
-            this.gbHulpbehoevende.Size = new System.Drawing.Size(354, 349);
+            this.gbHulpbehoevende.Size = new System.Drawing.Size(354, 415);
             this.gbHulpbehoevende.TabIndex = 61;
             this.gbHulpbehoevende.TabStop = false;
             this.gbHulpbehoevende.Text = "Hulpbehoevende";
+            this.gbHulpbehoevende.Visible = false;
             // 
-            // dtpHulpBirthDate
+            // dtpHulpBirthDate2
             // 
-            this.dtpHulpBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHulpBirthDate.Location = new System.Drawing.Point(113, 59);
-            this.dtpHulpBirthDate.Name = "dtpHulpBirthDate";
-            this.dtpHulpBirthDate.Size = new System.Drawing.Size(205, 21);
-            this.dtpHulpBirthDate.TabIndex = 62;
+            this.dtpHulpBirthDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHulpBirthDate2.Location = new System.Drawing.Point(127, 59);
+            this.dtpHulpBirthDate2.Name = "dtpHulpBirthDate2";
+            this.dtpHulpBirthDate2.Size = new System.Drawing.Size(205, 21);
+            this.dtpHulpBirthDate2.TabIndex = 71;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(9, 223);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(119, 13);
+            this.label30.TabIndex = 71;
+            this.label30.Text = "Bevestig Wachtwoord:*";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(9, 201);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(75, 13);
+            this.label29.TabIndex = 69;
+            this.label29.Text = "Wachtwoord:*";
+            // 
+            // tbHulpBevestigWachtwoord
+            // 
+            this.tbHulpBevestigWachtwoord.Location = new System.Drawing.Point(127, 220);
+            this.tbHulpBevestigWachtwoord.Name = "tbHulpBevestigWachtwoord";
+            this.tbHulpBevestigWachtwoord.Size = new System.Drawing.Size(204, 20);
+            this.tbHulpBevestigWachtwoord.TabIndex = 68;
+            // 
+            // tbHulpWachtwoord
+            // 
+            this.tbHulpWachtwoord.Location = new System.Drawing.Point(127, 197);
+            this.tbHulpWachtwoord.Name = "tbHulpWachtwoord";
+            this.tbHulpWachtwoord.Size = new System.Drawing.Size(205, 20);
+            this.tbHulpWachtwoord.TabIndex = 67;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(4, 220);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(119, 13);
+            this.label28.TabIndex = 70;
+            this.label28.Text = "Bevestig Wachtwoord:*";
             // 
             // gbVrijwilliger
             // 
-            this.gbVrijwilliger.Controls.Add(this.dtpHulpBirthDate);
+            this.gbVrijwilliger.Controls.Add(this.label28);
+            this.gbVrijwilliger.Controls.Add(this.label3);
+            this.gbVrijwilliger.Controls.Add(this.label2);
+            this.gbVrijwilliger.Controls.Add(this.tbVrijBevestigWachtwoord);
+            this.gbVrijwilliger.Controls.Add(this.tbVrijWachtwoord);
+            this.gbVrijwilliger.Controls.Add(this.dtpVrijBirthDate2);
             this.gbVrijwilliger.Controls.Add(this.dtpVrijBirthDate);
             this.gbVrijwilliger.Controls.Add(this.btnVrijFindPhoto);
             this.gbVrijwilliger.Controls.Add(this.tbVrijPhoto);
@@ -660,17 +724,58 @@
             this.gbVrijwilliger.Controls.Add(this.tbVrijTransport);
             this.gbVrijwilliger.Controls.Add(this.tbVrijPhonenumber);
             this.gbVrijwilliger.Controls.Add(this.tbVrijCompetences);
-            this.gbVrijwilliger.Location = new System.Drawing.Point(12, 39);
+            this.gbVrijwilliger.Location = new System.Drawing.Point(12, 46);
             this.gbVrijwilliger.Name = "gbVrijwilliger";
             this.gbVrijwilliger.Size = new System.Drawing.Size(360, 482);
             this.gbVrijwilliger.TabIndex = 62;
             this.gbVrijwilliger.TabStop = false;
             this.gbVrijwilliger.Text = "Vrijwilliger";
+            this.gbVrijwilliger.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(5, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 13);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "Bevestig Wachtwoord";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 65;
+            this.label2.Text = "Wachtwoord:*";
+            // 
+            // tbVrijBevestigWachtwoord
+            // 
+            this.tbVrijBevestigWachtwoord.Location = new System.Drawing.Point(145, 217);
+            this.tbVrijBevestigWachtwoord.Name = "tbVrijBevestigWachtwoord";
+            this.tbVrijBevestigWachtwoord.Size = new System.Drawing.Size(204, 20);
+            this.tbVrijBevestigWachtwoord.TabIndex = 64;
+            // 
+            // tbVrijWachtwoord
+            // 
+            this.tbVrijWachtwoord.Location = new System.Drawing.Point(145, 194);
+            this.tbVrijWachtwoord.Name = "tbVrijWachtwoord";
+            this.tbVrijWachtwoord.Size = new System.Drawing.Size(205, 20);
+            this.tbVrijWachtwoord.TabIndex = 63;
+            // 
+            // dtpVrijBirthDate2
+            // 
+            this.dtpVrijBirthDate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpVrijBirthDate2.Location = new System.Drawing.Point(144, 57);
+            this.dtpVrijBirthDate2.Name = "dtpVrijBirthDate2";
+            this.dtpVrijBirthDate2.Size = new System.Drawing.Size(205, 21);
+            this.dtpVrijBirthDate2.TabIndex = 62;
             // 
             // dtpVrijBirthDate
             // 
             this.dtpVrijBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpVrijBirthDate.Location = new System.Drawing.Point(114, 59);
+            this.dtpVrijBirthDate.Location = new System.Drawing.Point(145, 57);
             this.dtpVrijBirthDate.Name = "dtpVrijBirthDate";
             this.dtpVrijBirthDate.Size = new System.Drawing.Size(205, 21);
             this.dtpVrijBirthDate.TabIndex = 61;
@@ -678,18 +783,19 @@
             // btnVrijFindPhoto
             // 
             this.btnVrijFindPhoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVrijFindPhoto.Location = new System.Drawing.Point(243, 449);
+            this.btnVrijFindPhoto.Location = new System.Drawing.Point(274, 447);
             this.btnVrijFindPhoto.Margin = new System.Windows.Forms.Padding(2);
             this.btnVrijFindPhoto.Name = "btnVrijFindPhoto";
             this.btnVrijFindPhoto.Size = new System.Drawing.Size(75, 24);
             this.btnVrijFindPhoto.TabIndex = 60;
             this.btnVrijFindPhoto.Text = "Bladeren...";
             this.btnVrijFindPhoto.UseVisualStyleBackColor = true;
+            //this.btnVrijFindPhoto.Click += new System.EventHandler(this.btnVrijFindPhoto_Click);
             // 
             // tbVrijPhoto
             // 
             this.tbVrijPhoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbVrijPhoto.Location = new System.Drawing.Point(113, 450);
+            this.tbVrijPhoto.Location = new System.Drawing.Point(144, 448);
             this.tbVrijPhoto.Margin = new System.Windows.Forms.Padding(2);
             this.tbVrijPhoto.Name = "tbVrijPhoto";
             this.tbVrijPhoto.Size = new System.Drawing.Size(126, 21);
@@ -714,19 +820,20 @@
             this.btnCreateAccount.TabIndex = 64;
             this.btnCreateAccount.Text = "Inschrijven";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            //this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // InschrijvenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 533);
-            this.Controls.Add(this.btnCreateAccount);
+            this.ClientSize = new System.Drawing.Size(384, 553);
             this.Controls.Add(this.gbVrijwilliger);
+            this.Controls.Add(this.btnCreateAccount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbHulpbehoevende);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbSoort);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InschrijvenForm";
             this.Text = "Inschrijven";
@@ -741,7 +848,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbSoort;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -795,8 +902,18 @@
         private System.Windows.Forms.Button btnVrijFindPhoto;
         private System.Windows.Forms.TextBox tbVrijPhoto;
         private System.Windows.Forms.DateTimePicker dtpVrijBirthDate;
-        private System.Windows.Forms.DateTimePicker dtpHulpBirthDate;
+        private System.Windows.Forms.DateTimePicker dtpVrijBirthDate2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCreateAccount;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbVrijBevestigWachtwoord;
+        private System.Windows.Forms.TextBox tbVrijWachtwoord;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox tbHulpBevestigWachtwoord;
+        private System.Windows.Forms.TextBox tbHulpWachtwoord;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.DateTimePicker dtpHulpBirthDate2;
     }
 }

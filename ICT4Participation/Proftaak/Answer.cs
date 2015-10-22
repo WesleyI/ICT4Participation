@@ -8,14 +8,17 @@ namespace Proftaak
 {
     class Answer
     {
+        private int id;
         private string text;
-        private string date;
+        private DateTime date;
 
+        public int Id { get { return id; } }
         public string Text { get { return text; } }
-        public string Date { get { return date; } }
+        public DateTime Date { get { return date; } }
 
-        public Answer(string text, string date)
+        public Answer(int id, string text, DateTime date)
         {
+            this.id = id;
             this.text = text;
             this.date = date;
         }

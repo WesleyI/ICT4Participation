@@ -12,7 +12,6 @@ namespace Proftaak
 {
     public partial class InloggenForm : Form
     {
-        DatabaseHandler databasehandler = new DatabaseHandler();
         public InloggenForm()
         {
             InitializeComponent();
@@ -26,11 +25,11 @@ namespace Proftaak
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            string SoortAccount = databasehandler.LogIn(tbUsername.Text, tbPassword.Text);
+            string SoortAccount = DatabaseHandler.LogIn(tbUsername.Text, tbPassword.Text);
             if (SoortAccount == "H")
             {
-                Hulpbehoevende hulpbehoevende = new Hulpbehoevende();
-                hulpbehoevende.Show();
+                //Hulpbehoevende hulpbehoevende = new Hulpbehoevende();
+                //hulpbehoevende.Show();
             }
             else if (SoortAccount == "V")
             {

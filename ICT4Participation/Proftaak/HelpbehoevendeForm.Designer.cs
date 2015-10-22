@@ -196,7 +196,6 @@
             this.btnLogOut.TabIndex = 19;
             this.btnLogOut.Text = "Afmelden";
             this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 

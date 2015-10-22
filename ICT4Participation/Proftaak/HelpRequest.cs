@@ -8,21 +8,34 @@ namespace Proftaak
 {
     class HelpRequest
     {
+        private int id;
         private string problem;
-        private string dateOfCreation;
-        private string beginDate;
+        private DateTime dateOfCreation;
+        private DateTime beginDate;
         private string duration;
         private string urgent;
         private bool accepted;
 
+        public int Id { get { return id; } }
         public string Problem { get { return problem; } }
-        public string DateOfCreation { get { return dateOfCreation; } }
-        public string BeginDate { get { return beginDate; } }
+        public DateTime DateOfCreation { get { return dateOfCreation; } }
+        public DateTime BeginDate { get { return beginDate; } }
         public string Duration { get { return duration; } }
         public string Urgent { get { return urgent; } }
         public bool Accepted { get { return accepted; } }
 
-        public HelpRequest(string problem, string dateOfCreation, string beginDate, 
+
+        public HelpRequest(int id, string problem, DateTime dateOfCreation, DateTime beginDate, string duration, string urgent)
+        {
+            this.id = id;
+            this.problem = problem;
+            this.dateOfCreation = dateOfCreation;
+            this.beginDate = beginDate;
+            this.duration = duration;
+            this.urgent = urgent;
+        }
+
+        public HelpRequest(string problem, DateTime dateOfCreation, DateTime beginDate, 
             string duration, string urgent, bool accepted)
         {
             this.problem = problem;
@@ -31,6 +44,11 @@ namespace Proftaak
             this.duration = duration;
             this.urgent = urgent;
             this.accepted = accepted;
+        }
+
+        public override string ToString()
+        {
+            return problem;
         }
     }
 }

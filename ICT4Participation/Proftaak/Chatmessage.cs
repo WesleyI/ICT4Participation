@@ -19,5 +19,11 @@ namespace Proftaak
             this.text = text;
             this.date = date;
         }
+
+        public override string ToString()
+        {
+            string info = date + ": " + text;
+            return info;
+        }
     }
 }

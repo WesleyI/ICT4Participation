@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -82,6 +83,7 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -752,5 +754,6 @@
         private System.Windows.Forms.ListBox lbAcceptedMeetings;
         private System.Windows.Forms.ListBox lbAcceptedByHulpbehoevende;
         private System.Windows.Forms.ListBox lbAcceptedHelpRequest;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -31,7 +31,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbEdit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.btnLogOut.TabIndex = 25;
             this.btnLogOut.Text = "Afmelden";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnEdit
             // 
@@ -63,17 +64,18 @@
             this.btnEdit.TabIndex = 22;
             this.btnEdit.Text = "Wijzigen";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // textBox1
+            // tbEdit
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(323, 85);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 295);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "Hier kan de beheerder een geselecteerd item bewerken.";
+            this.tbEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.tbEdit.Location = new System.Drawing.Point(323, 85);
+            this.tbEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.tbEdit.Multiline = true;
+            this.tbEdit.Name = "tbEdit";
+            this.tbEdit.Size = new System.Drawing.Size(241, 295);
+            this.tbEdit.TabIndex = 21;
+            this.tbEdit.Text = "Hier kan de beheerder een geselecteerd item bewerken.";
             // 
             // label4
             // 
@@ -118,6 +120,7 @@
             this.btnRemove.TabIndex = 17;
             this.btnRemove.Text = "Verwijderen";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // label1
             // 
@@ -139,6 +142,7 @@
             this.lbHelpRequest.Name = "lbHelpRequest";
             this.lbHelpRequest.Size = new System.Drawing.Size(282, 64);
             this.lbHelpRequest.TabIndex = 28;
+            this.lbHelpRequest.SelectedIndexChanged += new System.EventHandler(this.lbHelpRequest_SelectedIndexChanged);
             // 
             // lbReview
             // 
@@ -149,6 +153,7 @@
             this.lbReview.Name = "lbReview";
             this.lbReview.Size = new System.Drawing.Size(282, 64);
             this.lbReview.TabIndex = 29;
+            this.lbReview.SelectedIndexChanged += new System.EventHandler(this.lbReview_SelectedIndexChanged);
             // 
             // lbAnswer
             // 
@@ -159,6 +164,7 @@
             this.lbAnswer.Name = "lbAnswer";
             this.lbAnswer.Size = new System.Drawing.Size(282, 64);
             this.lbAnswer.TabIndex = 30;
+            this.lbAnswer.SelectedIndexChanged += new System.EventHandler(this.lbAnswer_SelectedIndexChanged);
             // 
             // BeheerderForm
             // 
@@ -171,7 +177,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbEdit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +195,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbEdit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

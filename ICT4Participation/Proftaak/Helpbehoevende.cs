@@ -6,33 +6,39 @@ using System.Threading.Tasks;
 
 namespace Proftaak
 {
-    class HelpBehoevende
+    public class HelpBehoevende
     {
         private string firstName;
         private string lastName;
+        private string email;
+        private string wachtwoord;
         private string city;
         private string street;
         private string address;
         private string bio;
-        private string dateOfBirth;
+        private DateTime dateOfBirth;
         private string phoneNumber;
         private string problem;
 
         public string FirstName { get { return firstName; } }
-        public string LastName { get { return lastName;} }
+        public string LastName { get { return lastName; } }
+        public string Email { get { return email; } }
+        public string Wachtwoord { get { return wachtwoord; } }
         public string City { get { return city; } }
-        public string Street { get { return street;} }
-        public string Address { get { return address;} }
-        public string Bio { get { return bio;} }
-        public string DateOfBirth { get { return dateOfBirth;} }
-        public string PhoneNumber { get { return phoneNumber;} }
-        public string Problem { get { return problem;} }
+        public string Street { get { return street; } }
+        public string Address { get { return address; } }
+        public string Bio { get { return bio; } }
+        public DateTime DateOfBirth { get { return dateOfBirth; } }
+        public string PhoneNumber { get { return phoneNumber; } }
+        public string Problem { get { return problem; } }
 
-        public HelpBehoevende(string firstName, string lastName, string city, string street, 
-            string address, string bio, string dateOfBirth, string phoneNumber, string problem)
+        public HelpBehoevende(string firstName, string lastName, string email, string wachtwoord, string city, string street,
+            string address, string bio, DateTime dateOfBirth, string phoneNumber, string problem)
         {
             this.firstName = firstName;
             this.lastName = lastName;
+            this.email = email;
+            this.wachtwoord = wachtwoord;
             this.city = city;
             this.street = street;
             this.address = address;
