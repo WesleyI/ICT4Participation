@@ -16,54 +16,116 @@ namespace Proftaak
         HelpHandler help = new HelpHandler(); // Toegang tot de lijsten in de HelpHandler.
         AccountHandler account = new AccountHandler(); // Toegang tot de lijsten van de AccountHandler.
 
-        string email;
+
+        private string email;
+
         public VrijwilligerForm(string email)
         {
             InitializeComponent();
             this.email = email;
             timer1.Start();
-            foreach (HelpBehoevende h in account.HelpBehoevenden) // Alle hulpbehoevenden die zijn aangemaakt worden in de lijst getoond.
-            {
-                lbHulpbehoevende.Items.Add(h);
-            }
         }
 
         public VrijwilligerForm()
         {
             InitializeComponent();
+
+            DatabaseHandler.GetHulpBehoevende();
+
+            foreach (HelpBehoevende h in AccountHandler.HelpBehoevenden) // Alle hulpbehoevenden die zijn aangemaakt worden in de lijst getoond.
+            {
+                lbHulpbehoevende.Items.Add(h.ToString());
+            }
+
             timer1.Start();
-        }
-
-        private void btnSendMessage_Click(object sender, EventArgs e)
-        {
-            string bericht = tbChatmessage.Text; // Het bericht dat de gebruiker heeft ingevoerd.
-            string datum = Convert.ToString(DateTime.Now); // De tijd en datum waarop het bericht wordt verzonden.
-            HelpBehoevende ontvanger = lbHulpbehoevende.SelectedItem as HelpBehoevende; // Haal de ontvanger op uit de lijst met hulpbehoevende.
-
-            //int ontvangerID = database.GetAccountID(ontvanger.Email); // Haal de ontvangerID op uit de database.
-            //int verzenderID = database.GetAccountID(email); // Haal de verzenderID op uit de database.
-
-            ChatMessage chatMessage = new ChatMessage(bericht, datum);
-            help.AddChatMessage(chatMessage); // Het bericht wordt toegevoegd aan de lijst met bestaande chatberichten.
-            RefreshList();
-
-            //database.AddChatMessage(bericht, datum, ontvangerID, verzenderID); // Voeg het bericht toe aan de database.
         }
 
         public void RefreshList()
         {
             lbChatmessage.Items.Clear();
+
             foreach (ChatMessage c in help.GetMesagges())
             {
                 lbChatmessage.Items.Add(c);
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void btSendMessage_Click(object sender, EventArgs e)
+        {
+            string bericht = tbChatmessage.Text;
+            DateTime datum = DateTime.Now;
+
+            if (lbHulpbehoevende.SelectedItem != null)
+            {
+                foreach (HelpBehoevende hb in AccountHandler.HelpBehoevenden)
+                {
+                    if (hb.ToString() == (string)lbHulpbehoevende.SelectedItem)
+                    {
+                        DatabaseHandler.AddChatMessage(bericht, datum, 1, hb.Id);
+                        ChatMessage chatMessage = new ChatMessage(bericht, datum);
+                        help.AddChatMessage(chatMessage);
+                        lbChatmessage.Items.Add(chatMessage.ToString());
+                    }
+                }
+            }
+        }
+
+
+        //TODO: BERICHTEN OPHALEN VAN AFZENDER
+        private void lbHulpbehoevende_SelectedIndexChanged(object sender, EventArgs e)
         {
             help.ClearMessages();
-            //TODO2 Berichten uit database halen
-            RefreshList();
+            lbChatmessage.Items.Clear();
+
+            if (lbHulpbehoevende.SelectedItem != null)
+            {
+                foreach (HelpBehoevende hb in AccountHandler.HelpBehoevenden)
+                {
+                    if (hb.ToString() == (string)lbHulpbehoevende.SelectedItem)
+                    {
+                        lbChatmessage.Items.Clear();
+
+                        DatabaseHandler.GetChatMessage(1);
+
+                        foreach (ChatMessage c in help.GetMesagges())
+                        {
+                            if(hb.Id == c.Ontvanger)
+                            {
+                                lbChatmessage.Items.Add(c.ToString());
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //TODO: BERICHTEN OPHALEN VAN AFZENDER
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            help.ClearMessages();
+            lbChatmessage.Items.Clear();
+
+            if (lbHulpbehoevende.SelectedItem != null)
+            {
+                foreach (HelpBehoevende hb in AccountHandler.HelpBehoevenden)
+                {
+                    if (hb.ToString() == (string)lbHulpbehoevende.SelectedItem)
+                    {
+                        lbChatmessage.Items.Clear();
+
+                        DatabaseHandler.GetChatMessage(1);
+
+                        foreach (ChatMessage c in help.GetMesagges())
+                        {
+                            if (hb.Id == c.Ontvanger)
+                            {
+                                lbChatmessage.Items.Add(c.ToString());
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

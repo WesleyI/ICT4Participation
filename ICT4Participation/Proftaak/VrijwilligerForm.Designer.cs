@@ -48,7 +48,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lbChatmessage = new System.Windows.Forms.ListBox();
             this.lbHulpbehoevende = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btSendMessage = new System.Windows.Forms.Button();
             this.tbChatmessage = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -275,7 +275,7 @@
             // 
             this.tabPage2.Controls.Add(this.lbChatmessage);
             this.tabPage2.Controls.Add(this.lbHulpbehoevende);
-            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.btSendMessage);
             this.tabPage2.Controls.Add(this.tbChatmessage);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
@@ -304,16 +304,18 @@
             this.lbHulpbehoevende.Name = "lbHulpbehoevende";
             this.lbHulpbehoevende.Size = new System.Drawing.Size(180, 454);
             this.lbHulpbehoevende.TabIndex = 17;
+            this.lbHulpbehoevende.SelectedIndexChanged += new System.EventHandler(this.lbHulpbehoevende_SelectedIndexChanged);
             // 
-            // button3
+            // btSendMessage
             // 
-            this.button3.Location = new System.Drawing.Point(519, 345);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 24);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Verzenden";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSendMessage.Location = new System.Drawing.Point(519, 345);
+            this.btSendMessage.Margin = new System.Windows.Forms.Padding(2);
+            this.btSendMessage.Name = "btSendMessage";
+            this.btSendMessage.Size = new System.Drawing.Size(91, 24);
+            this.btSendMessage.TabIndex = 16;
+            this.btSendMessage.Text = "Verzenden";
+            this.btSendMessage.UseVisualStyleBackColor = true;
+            this.btSendMessage.Click += new System.EventHandler(this.btSendMessage_Click);
             // 
             // tbChatmessage
             // 
@@ -673,6 +675,11 @@
             this.lblUsername.TabIndex = 56;
             this.lblUsername.Text = "\"Naam gebruiker\"";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // VrijwilligerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -732,7 +739,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btSendMessage;
         private System.Windows.Forms.TextBox tbChatmessage;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAcceptHelpRequest;

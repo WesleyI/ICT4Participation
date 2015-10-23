@@ -23,7 +23,7 @@ namespace Proftaak
             {
                 con = new OracleConnection();
                 con.ConnectionString = "User Id=system;Password=Wesley96;Data Source=localhost/xe";
-              
+
                 con.Open();
 
                 //MessageBox.Show("DATABASE VERBINDING GELUKT");
@@ -185,7 +185,7 @@ namespace Proftaak
 
         public static void DelVrijwilliger()
         {
-            
+
         }
 
         public static void AddHelpBehoevende(HelpBehoevende hulpbehoevende)
@@ -228,71 +228,7 @@ namespace Proftaak
 
         public static void DelHelpbehoevende()
         {
-            
-        }
 
-        public static void AddChatMessage(int berichtId, string tekst, string datum, int fkOntvanger, int fkVerzender)
-        {
-            string oradb = @"Data Source=localhost:1521;User Id=proftaak;Password=proftaak;"; //Waar en hoe verbind het programma met de database, username en password zijn de connecit die jij hebt gemaakt
-            OracleConnection conn = new OracleConnection(oradb);
-
-            try // kijk of het lukt
-            {
-                conn.Open(); // open de connectie
-                OracleCommand cmd = new OracleCommand(); // nieuwe command om queries uit te voeren 
-                cmd.Connection = conn; //zorg dat de queries naar de juiste connectie gaan
-                cmd.CommandText = "INSERT INTO CHATBERICHT (CHATBERICHTID, TEKST, DATUM, FKONTVANGER, FKVERZENDER) VALUES (:berichtID, :Tekst, TO_DATE(:Datum, 'YYYY-MM-DD HH24:MI:SS'), :fkOntvanger, fkVerzender);"; // Selecteer alles van de TEST tabel (zelf aangemaakt moeten we veranderen naar Gebruiker) waar de naar refereert naar "1"
-
-                cmd.Parameters.Add(new OracleParameter("ChatBerichtID", OracleDbType.Int32, berichtId, ParameterDirection.Input));
-                cmd.Parameters.Add(new OracleParameter("Tekst", OracleDbType.Varchar2, tekst, ParameterDirection.Input));
-                cmd.Parameters.Add(new OracleParameter("Datum", OracleDbType.Varchar2, datum, ParameterDirection.Input));
-                cmd.Parameters.Add(new OracleParameter("fkOntvanger", OracleDbType.Int32, fkOntvanger, ParameterDirection.Input));
-                cmd.Parameters.Add(new OracleParameter("fkVerzender", OracleDbType.Int32, fkVerzender, ParameterDirection.Input));
-
-                cmd.CommandType = CommandType.Text; // het is een SQL text command 
-                OracleDataReader reader = cmd.ExecuteReader(); // maak een reader aan omdat je gegvevens krijgt
-                
-            }
-            catch (OracleException oe) // mocht er iets fout gaan
-            {
-                MessageBox.Show(oe.Message); // wat ging er fout
-                 // het is fout gegaan return false
-            }
-            finally
-            {
-                conn.Close(); // sluit de connectie zodat hij niet voor eeuwig open blijft
-            }
-        }
-
-        public static string GetChatMessage(int fkVerzender)
-        {
-            string bericht;
-            string oradb = @"Data Source=localhost:1521;User Id=proftaak;Password=proftaak;"; //Waar en hoe verbind het programma met de database, username en password zijn de connecit die jij hebt gemaakt
-            OracleConnection conn = new OracleConnection(oradb);
-
-            try
-            {
-                conn.Open(); // open de connectie
-                OracleCommand cmd = new OracleCommand(); // nieuwe command om queries uit te voeren 
-                cmd.Connection = conn; //zorg dat de queries naar de juiste connectie gaan
-                cmd.CommandText = "SELECT Tekst FROM Charbericht WHERE fkVerzender = :fkVerzender;";
-
-                cmd.Parameters.Add(new OracleParameter("fkVerzender", OracleDbType.Int32, fkVerzender, ParameterDirection.Input));
-
-                cmd.CommandType = CommandType.Text;
-                OracleDataReader reader = cmd.ExecuteReader();
-                bericht = Convert.ToString(reader["Tekst"]);
-            }
-            catch (OracleException oe)
-            {
-                MessageBox.Show(oe.Message);
-                bericht = null;
-            }
-            finally
-            {
-                conn.Close();
-            }
-            return bericht;
         }
 
         public static int GetAccountID(string email)
@@ -328,18 +264,17 @@ namespace Proftaak
 
         public static void AddAnswer()
         {
-            
+
         }
 
         public static void AddReview()
         {
-            
-        }
 
+        }
 
         public static void AddMeeting()
         {
-            
+
         }
 
         public static void EditMeeting()
@@ -349,7 +284,7 @@ namespace Proftaak
 
         public static void AddHulpVraag()
         {
-            
+
         }
 
         public static void GetHulpVraag()
@@ -376,7 +311,7 @@ namespace Proftaak
                     duur = dr.GetString(4);
                     urgentie = dr.GetString(5);
 
-                    HelpRequest helpRequest = new HelpRequest(hulpvraagID, tekstprobleem,aanmaakdatum,begindatum,duur,urgentie);
+                    HelpRequest helpRequest = new HelpRequest(hulpvraagID, tekstprobleem, aanmaakdatum, begindatum, duur, urgentie);
 
                     HelpHandler helphandler = new HelpHandler();
 
@@ -532,9 +467,9 @@ namespace Proftaak
             {
                 cmd = new OracleCommand();
                 cmd.Connection = con;
-                cmd.CommandText = "UPDATE REACTIE SET TEKST = :UPDATEDTEKST WHERE ANSWERID = :ANSWERID";
+                cmd.CommandText = "UPDATE REACTIE SET TEKST = :UPDATEDTEKST WHERE REACTIEID = :REACTIEID";
                 cmd.Parameters.Add("UPDATEDTEKST", OracleDbType.Varchar2).Value = inhoud;
-                cmd.Parameters.Add("ANSWERID", OracleDbType.Int32).Value = id;
+                cmd.Parameters.Add("REACTIEID", OracleDbType.Int32).Value = id;
 
                 int rowsUpdated = cmd.ExecuteNonQuery();
             }
@@ -632,5 +567,164 @@ namespace Proftaak
                 Disconnect();
             }
         }
+
+        public static void GetHulpBehoevende()
+        {
+            Connect();
+
+            ReadData("SELECT * FROM ACCOUNT WHERE DISCRIMINATOR = 'H'");
+
+            try
+            {
+                while (dr.Read())
+                {
+                    int id;
+                    string firstName;
+                    string lastName;
+
+                    id = dr.GetInt32(0);
+                    firstName = dr.GetString(8);
+                    lastName = dr.GetString(9);
+
+                    AccountHandler accounthandler = new AccountHandler();
+
+                    HelpBehoevende helpbehoevende = new HelpBehoevende(id, firstName, lastName);
+
+                    accounthandler.AddHelpbehoevende(helpbehoevende);
+                }
+            }
+
+            catch (InvalidCastException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+
+        public static void GetVrijwilliger()
+        {
+            Connect();
+
+            ReadData("SELECT * FROM ACCOUNT WHERE DISCRIMINATOR = 'V'");
+
+            try
+            {
+                while (dr.Read())
+                {
+                    int id;
+                    string firstName;
+                    string lastName;
+
+                    id = dr.GetInt32(0);
+                    firstName = dr.GetString(8);
+                    lastName = dr.GetString(9);
+
+                    AccountHandler accounthandler = new AccountHandler();
+
+                    Vrijwilliger vrijwilliger = new Vrijwilliger(id, firstName, lastName);
+
+                    accounthandler.AddVrijwilliger(vrijwilliger);
+                }
+            }
+
+            catch (InvalidCastException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+
+        public static void AddChatMessage(string bericht, DateTime datum, int afzender, int ontvanger)
+        {
+            Connect();
+
+            int chatID = 1;
+
+            ReadData("SELECT MAX(CHATBERICHTID) +1  FROM CHATBERICHT");
+            try
+            {
+                while (dr.Read())
+                {
+                    if (!dr.IsDBNull(0))
+                    {
+                        chatID = dr.GetInt32(0);
+                    }
+                }
+            }
+            catch (InvalidCastException ICE)
+            {
+                MessageBox.Show(ICE.ToString());
+            }
+
+            try
+            {
+                cmd = new OracleCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "INSERT INTO CHATBERICHT (CHATBERICHTID, TEKST, DATUM, FKONTVANGER, FKVERZENDER) VALUES(:CHATBERICHTID, :TEKST, :DATUM, :FKONTVANGER, :FKVERZENDER)";
+                cmd.Parameters.Add("CHATBERICHTID", OracleDbType.Int32).Value = chatID;
+                cmd.Parameters.Add("TEKST", OracleDbType.Varchar2).Value = bericht;
+                cmd.Parameters.Add("DATUM", OracleDbType.Date).Value = datum;
+                cmd.Parameters.Add("FKONTVANGER", OracleDbType.Int32).Value = ontvanger;
+                cmd.Parameters.Add("FKVERZENDER", OracleDbType.Int32).Value = afzender;
+
+                int rowsUpdated = cmd.ExecuteNonQuery();
+            }
+            catch (OracleException OE)
+            {
+                MessageBox.Show(OE.ToString());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+          
+        public static void GetChatMessage(int afzender)
+        {
+            Connect();
+
+            ReadData("SELECT * FROM CHATBERICHT WHERE FKVERZENDER = " + afzender.ToString());
+
+            try
+            {
+                while (dr.Read())
+                {
+                    int berichtId;
+                    string tekst;
+                    DateTime datum;
+                    int ontvanger;
+
+                    berichtId = dr.GetInt32(0);
+                    tekst = dr.GetString(1);
+                    datum = dr.GetDateTime(2);
+                    ontvanger = dr.GetInt32(3);
+
+                    HelpHandler helphandler = new HelpHandler();
+
+                    ChatMessage chatmessage = new ChatMessage(berichtId, tekst, datum, ontvanger);
+
+                    helphandler.AddChatMessage(chatmessage);
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            finally
+            {
+                Disconnect();
+            }
+        }
+         
     }
 }

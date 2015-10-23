@@ -8,36 +8,36 @@ namespace Proftaak
 {
     class AccountHandler
     {
-        private List<Vrijwilliger> vrijwilligers = new List<Vrijwilliger>(); 
-        private List<HelpBehoevende> helpBehoevenden = new List<HelpBehoevende>();
-        private List<HelpRequest> helpRequests = new List<HelpRequest>();
+        private static List<Vrijwilliger> vrijwilligers = new List<Vrijwilliger>(); 
+        private static List<HelpBehoevende> helpBehoevenden = new List<HelpBehoevende>();
+        private static List<HelpRequest> helpRequests = new List<HelpRequest>();
 
-        public List<Vrijwilliger> Vrijwilligers { get { return vrijwilligers; } }
-        public List<HelpBehoevende> HelpBehoevenden { get { return helpBehoevenden; } } 
+        public static List<Vrijwilliger> Vrijwilligers { get { return vrijwilligers; } }
+        public static List<HelpBehoevende> HelpBehoevenden { get { return helpBehoevenden; } }
+        public static List<HelpRequest> HelpRequests { get { return helpRequests; } }
 
         public AccountHandler()
         {
             
         }
 
-        public bool AddVrijwilliger()
+        public void AddVrijwilliger(Vrijwilliger vrijwilliger)
         {
-            return false;
+            vrijwilligers.Add(vrijwilliger);
         }
 
-        public bool DelVrijwilliger()
+        public void DelVrijwilliger()
         {
-            return false;
         }
 
-        public bool AddHelpbehoevende()
+        public void AddHelpbehoevende(HelpBehoevende helpbehoevende)
         {
-            return false;
+            helpBehoevenden.Add(helpbehoevende);
         }
 
-        public bool DelHelpbehoevende()
+        public void DelHelpbehoevende()
        {
-            return false;
+
         }
     }
 }

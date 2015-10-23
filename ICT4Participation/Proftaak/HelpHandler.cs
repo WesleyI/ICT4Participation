@@ -23,27 +23,24 @@ namespace Proftaak
             
         }
 
-        public bool AddHelpRequest(HelpRequest helpRequest)
+        public void AddHelpRequest(HelpRequest helpRequest)
         {
             helpRequests.Add(helpRequest);
-            return true;
         }
 
-        public bool AddReview(Review review)
+        public void AddReview(Review review)
         {
             reviews.Add(review);
-            return true;
         }
 
-        public bool AddMeeting()
+        public void AddMeeting()
         {
-            return false;
+
         }
 
-        public bool AddChatMessage(ChatMessage message)
+        public void AddChatMessage(ChatMessage message)
         {
             chatMessages.Add(message);
-            return true;
         }
 
         public List<ChatMessage> GetMesagges()
@@ -56,10 +53,9 @@ namespace Proftaak
             chatMessages.Clear();
         }
 
-        public bool AddAnswer(Answer answer)
+        public void AddAnswer(Answer answer)
         {
             answers.Add(answer);
-            return true;
         }
 
         public void EditMeeting()

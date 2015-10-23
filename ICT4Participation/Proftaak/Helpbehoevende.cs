@@ -8,6 +8,7 @@ namespace Proftaak
 {
     public class HelpBehoevende
     {
+        private int id;
         private string firstName;
         private string lastName;
         private string email;
@@ -20,6 +21,8 @@ namespace Proftaak
         private string phoneNumber;
         private string problem;
 
+
+        public int Id { get { return id; } }
         public string FirstName { get { return firstName; } }
         public string LastName { get { return lastName; } }
         public string Email { get { return email; } }
@@ -31,6 +34,15 @@ namespace Proftaak
         public DateTime DateOfBirth { get { return dateOfBirth; } }
         public string PhoneNumber { get { return phoneNumber; } }
         public string Problem { get { return problem; } }
+
+
+
+        public HelpBehoevende(int id, string firstname, string lastname)
+        {
+            this.id = id;
+            this.firstName = firstname;
+            this.lastName = lastname;
+        }
 
         public HelpBehoevende(string firstName, string lastName, string email, string wachtwoord, string city, string street,
             string address, string bio, DateTime dateOfBirth, string phoneNumber, string problem)
@@ -46,6 +58,11 @@ namespace Proftaak
             this.dateOfBirth = dateOfBirth;
             this.phoneNumber = phoneNumber;
             this.problem = problem;
+        }
+
+        public override string ToString()
+        {
+            return firstName + " " + lastName;
         }
     }
 }

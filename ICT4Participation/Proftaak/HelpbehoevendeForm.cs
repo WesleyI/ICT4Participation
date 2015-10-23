@@ -10,37 +10,111 @@ using System.Windows.Forms;
 
 namespace Proftaak
 {
-    public partial class Hulpbehoevende : Form
+    public partial class HulpbehoevendeForm : Form
     {
         HelpHandler help = new HelpHandler(); // Toegang tot de lijsten in de HelpHandler.
         AccountHandler account = new AccountHandler(); // Toegang tot de lijsten van de AccountHandler.
 
         string email;
-        public Hulpbehoevende(string email)
+
+        public HulpbehoevendeForm()
+        {
+            InitializeComponent();
+
+            DatabaseHandler.GetVrijwilliger();
+
+            foreach(Vrijwilliger v in AccountHandler.Vrijwilligers)
+            {
+                lbChatVrijwilligers.Items.Add(v.ToString());
+            }
+        }
+
+        public HulpbehoevendeForm(string email)
         {
             InitializeComponent();
             this.email = email;
-            foreach (Vrijwilliger v in account.Vrijwilligers) // Alle vrijwilligers die zijn aangemaakt worden in de lijst getoond.
+            foreach (Vrijwilliger v in AccountHandler.Vrijwilligers) // Alle vrijwilligers die zijn aangemaakt worden in de lijst getoond.
             {
                 lbVrijwilligers.Items.Add(v);
             }
         }
 
-        private void btnSendMessage_Click(object sender, EventArgs e)
+        private void btnSendMessage_Click_1(object sender, EventArgs e)
         {
-            string bericht = tbChatMessage.Text; // Het bericht dat de gebruiker heeft ingevoerd.
-            string datum = Convert.ToString(DateTime.Now); // De tijd en datum waarop het bericht wordt verzonden.
-            Vrijwilliger ontvanger = lbVrijwilligers.SelectedItem as Vrijwilliger; // Haal de ontvanger op uit de lijst met vrijwilligers.
+            string bericht = tbChatMessage.Text;
+            DateTime datum = DateTime.Now;
 
-            // ontvangerID = database.GetAccountID(ontvanger.Email); // Haal de ontvangerID op uit de database.
-            // int verzenderID = database.GetAccountID(email); // Haal de verzenderID op uit de database.
+            if (lbChatVrijwilligers.SelectedItem != null)
+            {
+                foreach (Vrijwilliger vw in AccountHandler.Vrijwilligers)
+                {
+                    if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
+                    {
+                        DatabaseHandler.AddChatMessage(bericht, datum, 2, vw.Id);
+                        ChatMessage chatMessage = new ChatMessage(bericht, datum);
+                        help.AddChatMessage(chatMessage);
+                        lbChatMessage.Items.Add(chatMessage.ToString());
+                    }
+                }
+            }
+        }
 
-            ChatMessage chatMessage = new ChatMessage(bericht, datum);
-            help.AddChatMessage(chatMessage); // Het bericht wordt toegevoegd aan de lijst met bestaande chatberichten.
-            lbChatMessage.Items.Add(chatMessage); // Het verstuurde bericht wordt weergegeven in de chatbox.
-            lbChatMessage.Refresh();
 
-            //database.AddChatMessage(bericht, datum, ontvangerID, verzenderID); // Voeg het bericht toe aan de database.
+        //TODO: BERICHTEN OPHALEN VAN AFZENDER
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            help.ClearMessages();
+            lbChatMessage.Items.Clear();
+
+            if (lbChatVrijwilligers.SelectedItem != null)
+            {
+                foreach (Vrijwilliger vw in AccountHandler.Vrijwilligers)
+                {
+                    if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
+                    {
+                        lbChatMessage.Items.Clear();
+
+                        DatabaseHandler.GetChatMessage(1);
+
+                        foreach (ChatMessage c in help.GetMesagges())
+                        {
+                            if (vw.Id == c.Ontvanger)
+                            {
+                                lbChatMessage.Items.Add(c.ToString());
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //TODO: BERICHTEN OPHALEN VAN AFZENDER
+        private void lbChatVrijwilligers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            help.ClearMessages();
+            lbChatMessage.Items.Clear();
+
+            if (lbChatVrijwilligers.SelectedItem != null)
+            {
+                foreach (Vrijwilliger vw in AccountHandler.Vrijwilligers)
+                {
+                    if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
+                    {
+                        lbChatMessage.Items.Clear();
+
+                        DatabaseHandler.GetChatMessage(1);
+
+                        foreach (ChatMessage c in help.GetMesagges())
+                        {
+                            if (vw.Id == c.Ontvanger)
+                            {
+                                lbChatMessage.Items.Add(c.ToString());
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

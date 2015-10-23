@@ -1,6 +1,6 @@
 ﻿namespace Proftaak
 {
-    partial class Hulpbehoevende
+    partial class HulpbehoevendeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lbAcceptedHelpRequests = new System.Windows.Forms.ListBox();
+            this.lbHelpRequests = new System.Windows.Forms.ListBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             this.btnAcceptHelpRequest = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -38,10 +43,13 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbChatMessage = new System.Windows.Forms.ListBox();
+            this.lbChatVrijwilligers = new System.Windows.Forms.ListBox();
             this.btnSendMessage = new System.Windows.Forms.Button();
             this.tbChatMessage = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
             this.tbProblem = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -59,44 +67,38 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dtpMeetingDate = new System.Windows.Forms.DateTimePicker();
             this.btnAddMeeting = new System.Windows.Forms.Button();
-            this.btnAddRecensie = new System.Windows.Forms.Button();
-            this.nudScore = new System.Windows.Forms.NumericUpDown();
-            this.tbRecensie = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tbMeetingDescription = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpMeetingDate = new System.Windows.Forms.DateTimePicker();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbRecensie = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.nudScore = new System.Windows.Forms.NumericUpDown();
+            this.btnAddRecensie = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbVrijwilligers = new System.Windows.Forms.ListBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.lbAnswers = new System.Windows.Forms.ListBox();
             this.tbHulpRecensie = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.tbHulpAnswer = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.lblHulpUsername = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.lbHelpRequests = new System.Windows.Forms.ListBox();
-            this.lbAcceptedHelpRequests = new System.Windows.Forms.ListBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lbChatVrijwilligers = new System.Windows.Forms.ListBox();
-            this.lbChatMessage = new System.Windows.Forms.ListBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lbVrijwilligers = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbAnswers = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -135,6 +137,43 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Hulpvragen";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 358);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(304, 15);
+            this.label19.TabIndex = 58;
+            this.label19.Text = "Klik hier om de geselecteerde hulpvraag te accepteren";
+            // 
+            // lbAcceptedHelpRequests
+            // 
+            this.lbAcceptedHelpRequests.FormattingEnabled = true;
+            this.lbAcceptedHelpRequests.ItemHeight = 15;
+            this.lbAcceptedHelpRequests.Location = new System.Drawing.Point(9, 228);
+            this.lbAcceptedHelpRequests.Name = "lbAcceptedHelpRequests";
+            this.lbAcceptedHelpRequests.Size = new System.Drawing.Size(187, 124);
+            this.lbAcceptedHelpRequests.TabIndex = 57;
+            // 
+            // lbHelpRequests
+            // 
+            this.lbHelpRequests.FormattingEnabled = true;
+            this.lbHelpRequests.ItemHeight = 15;
+            this.lbHelpRequests.Location = new System.Drawing.Point(9, 70);
+            this.lbHelpRequests.Name = "lbHelpRequests";
+            this.lbHelpRequests.Size = new System.Drawing.Size(187, 124);
+            this.lbHelpRequests.TabIndex = 56;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(225, 228);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(365, 126);
+            this.textBox17.TabIndex = 55;
+            this.textBox17.Text = "Biografie van de vrijwilliger";
             // 
             // btnAcceptHelpRequest
             // 
@@ -224,6 +263,25 @@
             this.tabPage2.Text = "Chat";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lbChatMessage
+            // 
+            this.lbChatMessage.FormattingEnabled = true;
+            this.lbChatMessage.ItemHeight = 15;
+            this.lbChatMessage.Location = new System.Drawing.Point(191, 6);
+            this.lbChatMessage.Name = "lbChatMessage";
+            this.lbChatMessage.Size = new System.Drawing.Size(398, 304);
+            this.lbChatMessage.TabIndex = 13;
+            // 
+            // lbChatVrijwilligers
+            // 
+            this.lbChatVrijwilligers.FormattingEnabled = true;
+            this.lbChatVrijwilligers.ItemHeight = 15;
+            this.lbChatVrijwilligers.Location = new System.Drawing.Point(6, 6);
+            this.lbChatVrijwilligers.Name = "lbChatVrijwilligers";
+            this.lbChatVrijwilligers.Size = new System.Drawing.Size(168, 394);
+            this.lbChatVrijwilligers.TabIndex = 12;
+            this.lbChatVrijwilligers.SelectedIndexChanged += new System.EventHandler(this.lbChatVrijwilligers_SelectedIndexChanged);
+            // 
             // btnSendMessage
             // 
             this.btnSendMessage.Location = new System.Drawing.Point(501, 318);
@@ -233,6 +291,7 @@
             this.btnSendMessage.TabIndex = 11;
             this.btnSendMessage.Text = "Verzenden";
             this.btnSendMessage.UseVisualStyleBackColor = true;
+            this.btnSendMessage.Click += new System.EventHandler(this.btnSendMessage_Click_1);
             // 
             // tbChatMessage
             // 
@@ -281,6 +340,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Contactgegevens";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(4, 15);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(303, 15);
+            this.label20.TabIndex = 63;
+            this.label20.Text = "Wijzig hier je gegevens en druk vervolgens op wijzigen";
             // 
             // tbProblem
             // 
@@ -449,6 +518,28 @@
             this.tabPage4.Text = "Vrijwilligers";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dtpMeetingDate);
+            this.groupBox3.Controls.Add(this.btnAddMeeting);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.tbMeetingDescription);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(289, 198);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(248, 195);
+            this.groupBox3.TabIndex = 59;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Gesprek aanvragen";
+            // 
+            // dtpMeetingDate
+            // 
+            this.dtpMeetingDate.Location = new System.Drawing.Point(7, 51);
+            this.dtpMeetingDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpMeetingDate.Name = "dtpMeetingDate";
+            this.dtpMeetingDate.Size = new System.Drawing.Size(226, 21);
+            this.dtpMeetingDate.TabIndex = 38;
+            // 
             // btnAddMeeting
             // 
             this.btnAddMeeting.Location = new System.Drawing.Point(155, 14);
@@ -459,43 +550,15 @@
             this.btnAddMeeting.Text = "Aanvragen";
             this.btnAddMeeting.UseVisualStyleBackColor = true;
             // 
-            // btnAddRecensie
+            // label4
             // 
-            this.btnAddRecensie.Location = new System.Drawing.Point(212, 14);
-            this.btnAddRecensie.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddRecensie.Name = "btnAddRecensie";
-            this.btnAddRecensie.Size = new System.Drawing.Size(56, 29);
-            this.btnAddRecensie.TabIndex = 50;
-            this.btnAddRecensie.Text = "Sturen";
-            this.btnAddRecensie.UseVisualStyleBackColor = true;
-            // 
-            // nudScore
-            // 
-            this.nudScore.Location = new System.Drawing.Point(118, 19);
-            this.nudScore.Margin = new System.Windows.Forms.Padding(2);
-            this.nudScore.Name = "nudScore";
-            this.nudScore.Size = new System.Drawing.Size(90, 21);
-            this.nudScore.TabIndex = 45;
-            // 
-            // tbRecensie
-            // 
-            this.tbRecensie.Location = new System.Drawing.Point(8, 45);
-            this.tbRecensie.Margin = new System.Windows.Forms.Padding(2);
-            this.tbRecensie.Multiline = true;
-            this.tbRecensie.Name = "tbRecensie";
-            this.tbRecensie.Size = new System.Drawing.Size(260, 146);
-            this.tbRecensie.TabIndex = 44;
-            this.tbRecensie.Text = "Hier kan de gebruiker een recensie over een vrijwilliger schrijven.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 21);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 15);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Beoordeling:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Datum:";
             // 
             // tbMeetingDescription
             // 
@@ -517,23 +580,87 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Reden:";
             // 
-            // label4
+            // groupBox2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 33);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Datum:";
+            this.groupBox2.Controls.Add(this.tbRecensie);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.nudScore);
+            this.groupBox2.Controls.Add(this.btnAddRecensie);
+            this.groupBox2.Location = new System.Drawing.Point(6, 197);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(277, 196);
+            this.groupBox2.TabIndex = 58;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Beoordeling";
             // 
-            // dtpMeetingDate
+            // tbRecensie
             // 
-            this.dtpMeetingDate.Location = new System.Drawing.Point(7, 51);
-            this.dtpMeetingDate.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpMeetingDate.Name = "dtpMeetingDate";
-            this.dtpMeetingDate.Size = new System.Drawing.Size(226, 21);
-            this.dtpMeetingDate.TabIndex = 38;
+            this.tbRecensie.Location = new System.Drawing.Point(8, 45);
+            this.tbRecensie.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRecensie.Multiline = true;
+            this.tbRecensie.Name = "tbRecensie";
+            this.tbRecensie.Size = new System.Drawing.Size(260, 146);
+            this.tbRecensie.TabIndex = 44;
+            this.tbRecensie.Text = "Hier kan de gebruiker een recensie over een vrijwilliger schrijven.";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 21);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 15);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Beoordeling:";
+            // 
+            // nudScore
+            // 
+            this.nudScore.Location = new System.Drawing.Point(118, 19);
+            this.nudScore.Margin = new System.Windows.Forms.Padding(2);
+            this.nudScore.Name = "nudScore";
+            this.nudScore.Size = new System.Drawing.Size(90, 21);
+            this.nudScore.TabIndex = 45;
+            // 
+            // btnAddRecensie
+            // 
+            this.btnAddRecensie.Location = new System.Drawing.Point(212, 14);
+            this.btnAddRecensie.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddRecensie.Name = "btnAddRecensie";
+            this.btnAddRecensie.Size = new System.Drawing.Size(56, 29);
+            this.btnAddRecensie.TabIndex = 50;
+            this.btnAddRecensie.Text = "Sturen";
+            this.btnAddRecensie.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.lbVrijwilligers);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.groupBox1.Location = new System.Drawing.Point(6, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(586, 186);
+            this.groupBox1.TabIndex = 57;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Vrijwilligers";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(226, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(353, 154);
+            this.textBox1.TabIndex = 56;
+            this.textBox1.Text = "Biografie van de vrijwilliger";
+            // 
+            // lbVrijwilligers
+            // 
+            this.lbVrijwilligers.FormattingEnabled = true;
+            this.lbVrijwilligers.ItemHeight = 15;
+            this.lbVrijwilligers.Location = new System.Drawing.Point(6, 20);
+            this.lbVrijwilligers.Name = "lbVrijwilligers";
+            this.lbVrijwilligers.Size = new System.Drawing.Size(198, 154);
+            this.lbVrijwilligers.TabIndex = 52;
             // 
             // tabPage5
             // 
@@ -550,6 +677,15 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Reacties";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // lbAnswers
+            // 
+            this.lbAnswers.FormattingEnabled = true;
+            this.lbAnswers.ItemHeight = 15;
+            this.lbAnswers.Location = new System.Drawing.Point(6, 24);
+            this.lbAnswers.Name = "lbAnswers";
+            this.lbAnswers.Size = new System.Drawing.Size(191, 379);
+            this.lbAnswers.TabIndex = 57;
             // 
             // tbHulpRecensie
             // 
@@ -604,139 +740,11 @@
             this.lblHulpUsername.TabIndex = 55;
             this.lblHulpUsername.Text = "\"Naam gebruiker\"";
             // 
-            // textBox17
+            // timer1
             // 
-            this.textBox17.Location = new System.Drawing.Point(225, 228);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(365, 126);
-            this.textBox17.TabIndex = 55;
-            this.textBox17.Text = "Biografie van de vrijwilliger";
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbHelpRequests
-            // 
-            this.lbHelpRequests.FormattingEnabled = true;
-            this.lbHelpRequests.ItemHeight = 15;
-            this.lbHelpRequests.Location = new System.Drawing.Point(9, 70);
-            this.lbHelpRequests.Name = "lbHelpRequests";
-            this.lbHelpRequests.Size = new System.Drawing.Size(187, 124);
-            this.lbHelpRequests.TabIndex = 56;
-            // 
-            // lbAcceptedHelpRequests
-            // 
-            this.lbAcceptedHelpRequests.FormattingEnabled = true;
-            this.lbAcceptedHelpRequests.ItemHeight = 15;
-            this.lbAcceptedHelpRequests.Location = new System.Drawing.Point(9, 228);
-            this.lbAcceptedHelpRequests.Name = "lbAcceptedHelpRequests";
-            this.lbAcceptedHelpRequests.Size = new System.Drawing.Size(187, 124);
-            this.lbAcceptedHelpRequests.TabIndex = 57;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 358);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(304, 15);
-            this.label19.TabIndex = 58;
-            this.label19.Text = "Klik hier om de geselecteerde hulpvraag te accepteren";
-            // 
-            // lbChatVrijwilligers
-            // 
-            this.lbChatVrijwilligers.FormattingEnabled = true;
-            this.lbChatVrijwilligers.ItemHeight = 15;
-            this.lbChatVrijwilligers.Location = new System.Drawing.Point(6, 6);
-            this.lbChatVrijwilligers.Name = "lbChatVrijwilligers";
-            this.lbChatVrijwilligers.Size = new System.Drawing.Size(168, 394);
-            this.lbChatVrijwilligers.TabIndex = 12;
-            // 
-            // lbChatMessage
-            // 
-            this.lbChatMessage.FormattingEnabled = true;
-            this.lbChatMessage.ItemHeight = 15;
-            this.lbChatMessage.Location = new System.Drawing.Point(191, 6);
-            this.lbChatMessage.Name = "lbChatMessage";
-            this.lbChatMessage.Size = new System.Drawing.Size(398, 304);
-            this.lbChatMessage.TabIndex = 13;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(4, 15);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(303, 15);
-            this.label20.TabIndex = 63;
-            this.label20.Text = "Wijzig hier je gegevens en druk vervolgens op wijzigen";
-            // 
-            // lbVrijwilligers
-            // 
-            this.lbVrijwilligers.FormattingEnabled = true;
-            this.lbVrijwilligers.ItemHeight = 15;
-            this.lbVrijwilligers.Location = new System.Drawing.Point(6, 20);
-            this.lbVrijwilligers.Name = "lbVrijwilligers";
-            this.lbVrijwilligers.Size = new System.Drawing.Size(198, 154);
-            this.lbVrijwilligers.TabIndex = 52;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(226, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 154);
-            this.textBox1.TabIndex = 56;
-            this.textBox1.Text = "Biografie van de vrijwilliger";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lbVrijwilligers);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.groupBox1.Location = new System.Drawing.Point(6, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(586, 186);
-            this.groupBox1.TabIndex = 57;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Vrijwilligers";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tbRecensie);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.nudScore);
-            this.groupBox2.Controls.Add(this.btnAddRecensie);
-            this.groupBox2.Location = new System.Drawing.Point(6, 197);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(277, 196);
-            this.groupBox2.TabIndex = 58;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Beoordeling";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.dtpMeetingDate);
-            this.groupBox3.Controls.Add(this.btnAddMeeting);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.tbMeetingDescription);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(289, 198);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(248, 195);
-            this.groupBox3.TabIndex = 59;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Gesprek aanvragen";
-            // 
-            // lbAnswers
-            // 
-            this.lbAnswers.FormattingEnabled = true;
-            this.lbAnswers.ItemHeight = 15;
-            this.lbAnswers.Location = new System.Drawing.Point(6, 24);
-            this.lbAnswers.Name = "lbAnswers";
-            this.lbAnswers.Size = new System.Drawing.Size(191, 379);
-            this.lbAnswers.TabIndex = 57;
-            // 
-            // Hulpbehoevende
+            // HulpbehoevendeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -744,7 +752,7 @@
             this.Controls.Add(this.lblHulpUsername);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Hulpbehoevende";
+            this.Name = "HulpbehoevendeForm";
             this.Text = "Hulpbehoevende";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -754,15 +762,15 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScore)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,5 +837,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox lbAnswers;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -54,7 +54,6 @@ C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.cs
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.BeheerderForm.resources
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.HulpvraagForm.resources
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.InloggenForm.resources
-C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.Hulpbehoevende.resources
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.InschrijvenForm.resources
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.Properties.Resources.resources
 C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.VrijwilligerForm.resources
@@ -77,3 +76,4 @@ C:\Users\Wesley\Desktop\ICT4Participation Totaal\Proftaak\obj\Debug\Proftaak.csp
 C:\Users\Wesley\Desktop\ICT4Participation Totaal\Proftaak\bin\Debug\Proftaak.exe
 C:\Users\Wesley\Desktop\ICT4Participation Totaal\Proftaak\bin\Debug\Proftaak.pdb
 C:\Users\Wesley\Desktop\ICT4Participation Totaal\Proftaak\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Wesley\Desktop\ICT4Participation - local\Proftaak\obj\Debug\Proftaak.HulpbehoevendeForm.resources

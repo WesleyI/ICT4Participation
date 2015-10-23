@@ -16,7 +16,7 @@ namespace Proftaak
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InloggenForm());
+            Application.Run(new HulpbehoevendeForm());
         }
     }
 }

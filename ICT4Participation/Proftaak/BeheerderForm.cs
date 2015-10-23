@@ -162,6 +162,7 @@ namespace Proftaak
                 if (selectedRequest != null)
                 {
                     DatabaseHandler.EditHelpRequest(selectedRequest.Id, tbEdit.Text);
+                    selectedRequest.Problem = tbEdit.Text;
                 }
             }
 
@@ -172,6 +173,7 @@ namespace Proftaak
                 if (selectedReview != null)
                 {
                     DatabaseHandler.EditReview(selectedReview.Id,tbEdit.Text);
+                    selectedReview.Text = tbEdit.Text;
                 }
             }
 
@@ -182,8 +184,11 @@ namespace Proftaak
                 if (selectedAnswer != null)
                 {
                     DatabaseHandler.EditAnswer(selectedAnswer.Id,tbEdit.Text);
+                    selectedAnswer.Text = tbEdit.Text;
                 }
             }
+
+            UpdateLists();
         }
     }
 }

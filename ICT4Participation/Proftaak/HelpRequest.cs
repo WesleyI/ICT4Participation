@@ -17,7 +17,7 @@ namespace Proftaak
         private bool accepted;
 
         public int Id { get { return id; } }
-        public string Problem { get { return problem; } }
+        public string Problem { get { return problem; } set { problem = value; } }
         public DateTime DateOfCreation { get { return dateOfCreation; } }
         public DateTime BeginDate { get { return beginDate; } }
         public string Duration { get { return duration; } }

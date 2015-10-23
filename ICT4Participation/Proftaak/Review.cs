@@ -14,7 +14,7 @@ namespace Proftaak
         private int score;
 
         public int Id { get { return id; } }
-        public string Text { get { return text; } }
+        public string Text { get { return text; } set { text = value; } }
         public DateTime Date { get { return date; } }
         public int Score { get { return score; } }
 
@@ -28,7 +28,7 @@ namespace Proftaak
 
         public override string ToString()
         {
-            return text + " - " + score;
+            return text;
         }
     }
 }

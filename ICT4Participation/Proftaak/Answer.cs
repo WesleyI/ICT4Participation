@@ -13,7 +13,7 @@ namespace Proftaak
         private DateTime date;
 
         public int Id { get { return id; } }
-        public string Text { get { return text; } }
+        public string Text { get { return text; } set { text = value; } }
         public DateTime Date { get { return date; } }
 
         public Answer(int id, string text, DateTime date)
@@ -21,6 +21,11 @@ namespace Proftaak
             this.id = id;
             this.text = text;
             this.date = date;
+        }
+
+        public override string ToString()
+        {
+            return text;
         }
 
     }
