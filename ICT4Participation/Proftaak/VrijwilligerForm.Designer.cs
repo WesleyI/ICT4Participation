@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbExtraInfo = new System.Windows.Forms.ListBox();
             this.lbReview = new System.Windows.Forms.ListBox();
             this.lbMeeting = new System.Windows.Forms.ListBox();
             this.lbHelpRequest = new System.Windows.Forms.ListBox();
@@ -75,12 +75,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lbExtraInfoAccepted = new System.Windows.Forms.ListBox();
             this.lbAcceptedMeetings = new System.Windows.Forms.ListBox();
             this.lbAcceptedByHulpbehoevende = new System.Windows.Forms.ListBox();
             this.lbAcceptedHelpRequest = new System.Windows.Forms.ListBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -108,7 +108,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.lbExtraInfo);
             this.tabPage1.Controls.Add(this.lbReview);
             this.tabPage1.Controls.Add(this.lbMeeting);
             this.tabPage1.Controls.Add(this.lbHelpRequest);
@@ -131,13 +131,14 @@
             this.tabPage1.Text = "Systeem";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // lbExtraInfo
             // 
-            this.textBox1.Location = new System.Drawing.Point(317, 51);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 234);
-            this.textBox1.TabIndex = 36;
+            this.lbExtraInfo.FormattingEnabled = true;
+            this.lbExtraInfo.ItemHeight = 15;
+            this.lbExtraInfo.Location = new System.Drawing.Point(320, 51);
+            this.lbExtraInfo.Name = "lbExtraInfo";
+            this.lbExtraInfo.Size = new System.Drawing.Size(290, 244);
+            this.lbExtraInfo.TabIndex = 36;
             // 
             // lbReview
             // 
@@ -165,6 +166,7 @@
             this.lbHelpRequest.Name = "lbHelpRequest";
             this.lbHelpRequest.Size = new System.Drawing.Size(260, 94);
             this.lbHelpRequest.TabIndex = 33;
+            this.lbHelpRequest.SelectedIndexChanged += new System.EventHandler(this.lbHelpRequest_SelectedIndexChanged);
             // 
             // btnAcceptMeeting
             // 
@@ -175,6 +177,7 @@
             this.btnAcceptMeeting.TabIndex = 32;
             this.btnAcceptMeeting.Text = "Verzoek accepteren";
             this.btnAcceptMeeting.UseVisualStyleBackColor = true;
+            this.btnAcceptMeeting.Click += new System.EventHandler(this.btnAcceptMeeting_Click);
             // 
             // btnAcceptHelpRequest
             // 
@@ -185,6 +188,7 @@
             this.btnAcceptHelpRequest.TabIndex = 31;
             this.btnAcceptHelpRequest.Text = "Hulpvraag accepteren";
             this.btnAcceptHelpRequest.UseVisualStyleBackColor = true;
+            this.btnAcceptHelpRequest.Click += new System.EventHandler(this.btnAcceptHelpRequest_Click);
             // 
             // label6
             // 
@@ -206,6 +210,7 @@
             this.btnAnswer.TabIndex = 29;
             this.btnAnswer.Text = "Reactie Plaatsen";
             this.btnAnswer.UseVisualStyleBackColor = true;
+            this.btnAnswer.Click += new System.EventHandler(this.btnAnswer_Click);
             // 
             // tbAnswer
             // 
@@ -579,12 +584,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.lbExtraInfoAccepted);
             this.tabPage4.Controls.Add(this.lbAcceptedMeetings);
             this.tabPage4.Controls.Add(this.lbAcceptedByHulpbehoevende);
             this.tabPage4.Controls.Add(this.lbAcceptedHelpRequest);
             this.tabPage4.Controls.Add(this.textBox20);
             this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.textBox16);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
@@ -594,6 +599,15 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Overzicht";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // lbExtraInfoAccepted
+            // 
+            this.lbExtraInfoAccepted.FormattingEnabled = true;
+            this.lbExtraInfoAccepted.ItemHeight = 15;
+            this.lbExtraInfoAccepted.Location = new System.Drawing.Point(241, 38);
+            this.lbExtraInfoAccepted.Name = "lbExtraInfoAccepted";
+            this.lbExtraInfoAccepted.Size = new System.Drawing.Size(356, 259);
+            this.lbExtraInfoAccepted.TabIndex = 33;
             // 
             // lbAcceptedMeetings
             // 
@@ -621,6 +635,7 @@
             this.lbAcceptedHelpRequest.Name = "lbAcceptedHelpRequest";
             this.lbAcceptedHelpRequest.Size = new System.Drawing.Size(199, 154);
             this.lbAcceptedHelpRequest.TabIndex = 30;
+            this.lbAcceptedHelpRequest.SelectedIndexChanged += new System.EventHandler(this.lbAcceptedHelpRequest_SelectedIndexChanged);
             // 
             // textBox20
             // 
@@ -642,16 +657,6 @@
             this.label17.Size = new System.Drawing.Size(244, 13);
             this.label17.TabIndex = 27;
             this.label17.Text = "Geaccepteerde kennismakingsverzoeken:";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(241, 38);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(370, 254);
-            this.textBox16.TabIndex = 25;
-            this.textBox16.Text = "Hier komt de informatie van de geselecteerde hulpvraag te staan.";
             // 
             // label18
             // 
@@ -744,7 +749,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAcceptHelpRequest;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnAcceptMeeting;
         private System.Windows.Forms.Label label17;
@@ -754,7 +758,6 @@
         private System.Windows.Forms.ListBox lbHelpRequest;
         private System.Windows.Forms.ListBox lbMeeting;
         private System.Windows.Forms.ListBox lbReview;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox lbChatmessage;
         private System.Windows.Forms.ListBox lbHulpbehoevende;
         private System.Windows.Forms.PictureBox pbPhoto;
@@ -762,5 +765,7 @@
         private System.Windows.Forms.ListBox lbAcceptedByHulpbehoevende;
         private System.Windows.Forms.ListBox lbAcceptedHelpRequest;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox lbExtraInfo;
+        private System.Windows.Forms.ListBox lbExtraInfoAccepted;
     }
 }

@@ -12,6 +12,8 @@ namespace Proftaak
 {
     public partial class InloggenForm : Form
     {
+        string inlog;
+
         public InloggenForm()
         {
             InitializeComponent();
@@ -25,22 +27,30 @@ namespace Proftaak
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            inlog = tbUsername.Text;
             string SoortAccount = DatabaseHandler.LogIn(tbUsername.Text, tbPassword.Text);
             if (SoortAccount == "H")
             {
-                //Hulpbehoevende hulpbehoevende = new Hulpbehoevende();
-                //hulpbehoevende.Show();
+                //HelpBehoevende hulpbehoevende = DatabaseHandler.GetHulpbehoevendeInlog(tbUsername.Text);
+                //HulpbehoevendeForm form = new HulpbehoevendeForm(hulpbehoevende.Id, hulpbehoevende.FirstName, hulpbehoevende.LastName);
+                //form.Show();
             }
             else if (SoortAccount == "V")
             {
-                VrijwilligerForm vrijwilliger = new VrijwilligerForm();
-                vrijwilliger.Show();
+                Vrijwilliger vrijwilliger = DatabaseHandler.GetVrijwilligerInlog(tbUsername.Text);
+                VrijwilligerForm form = new VrijwilligerForm(vrijwilliger.Email, vrijwilliger.FirstName, vrijwilliger.LastName, vrijwilliger.Id); //
+                form.Show();
             }
             else if (SoortAccount == "B")
             {
                 BeheerderForm beheerder = new BeheerderForm();
                 beheerder.Show();
             }
+        }
+
+        public string GeefInlog()
+        {
+            return inlog;
         }
     }
 }

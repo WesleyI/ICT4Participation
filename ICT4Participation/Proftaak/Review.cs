@@ -12,18 +12,21 @@ namespace Proftaak
         private string text;
         private DateTime date;
         private int score;
+        private int verzender;
 
         public int Id { get { return id; } }
         public string Text { get { return text; } set { text = value; } }
         public DateTime Date { get { return date; } }
         public int Score { get { return score; } }
+        public int Verzender { get; set; }
 
-        public Review(int id, string text, DateTime date, int score)
+        public Review(int id, string text, DateTime date, int score, int verzender)
         {
             this.id = id;
             this.text = text;
             this.date = date;
             this.score = score;
+            this.verzender = verzender;
         }
 
         public override string ToString()

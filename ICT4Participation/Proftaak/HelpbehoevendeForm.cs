@@ -12,7 +12,6 @@ namespace Proftaak
 {
     public partial class HulpbehoevendeForm : Form
     {
-        HelpHandler help = new HelpHandler(); // Toegang tot de lijsten in de HelpHandler.
         AccountHandler account = new AccountHandler(); // Toegang tot de lijsten van de AccountHandler.
 
         string email;
@@ -27,6 +26,8 @@ namespace Proftaak
             {
                 lbChatVrijwilligers.Items.Add(v.ToString());
             }
+
+            timer1.Start();
         }
 
         public HulpbehoevendeForm(string email)
@@ -41,21 +42,28 @@ namespace Proftaak
 
         private void btnSendMessage_Click_1(object sender, EventArgs e)
         {
-            string bericht = tbChatMessage.Text;
-            DateTime datum = DateTime.Now;
-
-            if (lbChatVrijwilligers.SelectedItem != null)
+            if (!string.IsNullOrWhiteSpace(tbChatMessage.Text))
             {
-                foreach (Vrijwilliger vw in AccountHandler.Vrijwilligers)
+                string bericht = tbChatMessage.Text;
+                DateTime datum = DateTime.Now;
+
+                if (lbChatVrijwilligers.SelectedItem != null)
                 {
-                    if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
+                    foreach (Vrijwilliger vw in AccountHandler.Vrijwilligers)
                     {
-                        DatabaseHandler.AddChatMessage(bericht, datum, 2, vw.Id);
-                        ChatMessage chatMessage = new ChatMessage(bericht, datum);
-                        help.AddChatMessage(chatMessage);
-                        lbChatMessage.Items.Add(chatMessage.ToString());
+                        if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
+                        {
+                            DatabaseHandler.AddChatMessage(bericht, datum, 2, vw.Id);
+                            ChatMessage chatMessage = new ChatMessage(bericht, datum);
+                            HelpHandler.AddChatMessage(chatMessage);
+                            lbChatMessage.Items.Add(chatMessage.ToString());
+                        }
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Vul een chatbericht in");
             }
         }
 
@@ -63,8 +71,12 @@ namespace Proftaak
         //TODO: BERICHTEN OPHALEN VAN AFZENDER
         private void timer1_Tick(object sender, EventArgs e)
         {
-            help.ClearMessages();
+            HelpHandler.ClearMessages();
             lbChatMessage.Items.Clear();
+
+            DatabaseHandler.GetChatAfzender(2);
+            DatabaseHandler.GetChatOntvanger(2);
+
 
             if (lbChatVrijwilligers.SelectedItem != null)
             {
@@ -72,13 +84,13 @@ namespace Proftaak
                 {
                     if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
                     {
-                        lbChatMessage.Items.Clear();
-
-                        DatabaseHandler.GetChatMessage(1);
-
-                        foreach (ChatMessage c in help.GetMesagges())
+                        foreach (ChatMessage c in HelpHandler.GetMesagges())
                         {
                             if (vw.Id == c.Ontvanger)
+                            {
+                                lbChatMessage.Items.Add(c.ToString());
+                            }
+                            if (vw.Id == c.Verzender)
                             {
                                 lbChatMessage.Items.Add(c.ToString());
                             }
@@ -92,8 +104,11 @@ namespace Proftaak
         //TODO: BERICHTEN OPHALEN VAN AFZENDER
         private void lbChatVrijwilligers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            help.ClearMessages();
+            HelpHandler.ClearMessages();
             lbChatMessage.Items.Clear();
+
+            DatabaseHandler.GetChatAfzender(2);
+            DatabaseHandler.GetChatOntvanger(2);
 
             if (lbChatVrijwilligers.SelectedItem != null)
             {
@@ -101,13 +116,13 @@ namespace Proftaak
                 {
                     if (vw.ToString() == (string)lbChatVrijwilligers.SelectedItem)
                     {
-                        lbChatMessage.Items.Clear();
-
-                        DatabaseHandler.GetChatMessage(1);
-
-                        foreach (ChatMessage c in help.GetMesagges())
+                        foreach (ChatMessage c in HelpHandler.GetMesagges())
                         {
                             if (vw.Id == c.Ontvanger)
+                            {
+                                lbChatMessage.Items.Add(c.ToString());
+                            }
+                            if(vw.Id == c.Verzender)
                             {
                                 lbChatMessage.Items.Add(c.ToString());
                             }

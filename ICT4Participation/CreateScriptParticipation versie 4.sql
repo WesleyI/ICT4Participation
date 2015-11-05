@@ -60,6 +60,7 @@ Create table Hulpvraag
   Begindatum date null,
   Duur varchar2(50) null,
   Urgent varchar2(1) not null,
+  Accepter number(10) null REFERENCES Account(AccountID),
   fkAccountID number(10) not null, --foreign key naar Persoon
   PRIMARY KEY (HulpvraagID),
   FOREIGN KEY (fkAccountID) REFERENCES Account(AccountID)
@@ -77,10 +78,24 @@ Create table Kennismakingsgesprek
   KennismakingsgesprekID number(10), --De primary key van Zoekwoord
   Datum date not null, --De andere properties van Zoekwoord
   Tekst varchar2(255) null,
+  Geaccepteerd number(1) default '0',
   fkAccountID number(10) not null, --foreign key naar Persoon
   PRIMARY KEY (KennismakingsgesprekID),
   FOREIGN KEY (fkAccountID) REFERENCES Account(AccountID)
   );
+  
+DROP SEQUENCE kennismakingsgesprekseq;
+CREATE SEQUENCE kennismakingsgesprekseq;
+
+CREATE OR REPLACE TRIGGER Kennismakingsgesprek_trigger 
+BEFORE INSERT ON Kennismakingsgesprek 
+FOR EACH ROW
+BEGIN
+  SELECT kennismakingsgesprekseq.NEXTVAL
+  INTO   :new.KennismakingsgesprekID
+  FROM   dual;
+END;
+/
   
 --Testdata Kennismakingsgesprek:
 INSERT INTO "KENNISMAKINGSGESPREK" (KENNISMAKINGSGESPREKID, DATUM, TEKST, FKACCOUNTID) 
@@ -121,6 +136,19 @@ Create table Recensie
   FOREIGN KEY (fkVerzender) REFERENCES Account(AccountID)
   );
   
+DROP SEQUENCE recensieseq;
+CREATE SEQUENCE recensieseq;
+
+CREATE OR REPLACE TRIGGER Recensie_trigger 
+BEFORE INSERT ON Recensie 
+FOR EACH ROW
+BEGIN
+  SELECT recensieseq.NEXTVAL
+  INTO   :new.RecensieID
+  FROM   dual;
+END;
+/
+  
 --Testdata Recensie
 INSERT INTO "RECENSIE" (RECENSIEID, TEKST, DATUM, BEOORDELING, FKONTVANGER, FKVERZENDER) 
 VALUES ('1', 'Walter deed niet aardig', TO_DATE('2015-10-17 08:06:32', 'YYYY-MM-DD HH24:MI:SS'), '1', '1', '2');
@@ -136,6 +164,19 @@ Create table Reactie
   FOREIGN KEY (fkAccountID) REFERENCES Account(AccountID),
   FOREIGN KEY (fkRecensieID) REFERENCES Recensie(RecensieID)
   );
+  
+DROP SEQUENCE reactieseq;
+CREATE SEQUENCE reactieseq;
+
+CREATE OR REPLACE TRIGGER Reactie_trigger 
+BEFORE INSERT ON Reactie 
+FOR EACH ROW
+BEGIN
+  SELECT reactieseq.NEXTVAL
+  INTO   :new.ReactieID
+  FROM   dual;
+END;
+/
   
 --Testdata Reactie
 INSERT INTO "REACTIE" (REACTIEID, TEKST, DATUM, FKACCOUNTID, FKRECENSIEID) 

@@ -12,7 +12,6 @@ namespace Proftaak
 {
     public partial class BeheerderForm : Form
     {
-        HelpHandler helphandler = new HelpHandler();
 
         HelpRequest selectedRequest = null;
         Review selectedReview = null;
@@ -121,7 +120,7 @@ namespace Proftaak
                 if (selectedRequest != null)
                 {
                     DatabaseHandler.DelHelpRequest(selectedRequest.Id);
-                    helphandler.DelHelpRequest(selectedRequest);
+                    HelpHandler.DelHelpRequest(selectedRequest);
                 }
             }
 
@@ -132,7 +131,7 @@ namespace Proftaak
                 if (selectedReview != null)
                 {
                     DatabaseHandler.DelReview(selectedReview.Id);
-                    helphandler.DelReview(selectedReview);
+                    HelpHandler.DelReview(selectedReview);
                 }
             }
 
@@ -143,7 +142,7 @@ namespace Proftaak
                 if (selectedAnswer != null)
                 {
                     DatabaseHandler.DelAnswer(selectedAnswer.Id);
-                    helphandler.DelAnswer(selectedAnswer);
+                    HelpHandler.DelAnswer(selectedAnswer);
                 }
             }
 

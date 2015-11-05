@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proftaak
 {
-    class HelpRequest
+    public class HelpRequest
     {
         private int id;
         private string problem;

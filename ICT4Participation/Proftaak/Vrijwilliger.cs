@@ -48,7 +48,6 @@ namespace Proftaak
             this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
-
         }
 
         public Vrijwilliger(string firstName, string lastName, string email, string wachtwoord, string city, string street, string address, string bio,

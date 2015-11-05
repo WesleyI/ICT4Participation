@@ -16,7 +16,7 @@ namespace Proftaak
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HulpbehoevendeForm());
+            Application.Run(new VrijwilligerForm("vrijwillig@hotmail.com", "Walter", "K",1));
         }
     }
 }
